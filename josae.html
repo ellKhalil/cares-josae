@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JOSAE | Journal of Smart Agriculture and Extension Services - Federal University Dutse</title>
+  <meta name="description" content="Journal of Smart Agriculture and Extension Services (JOSAE) - Official peer-reviewed bi-annual journal by CARES, Federal University Dutse. ISSN: 1597-1686.">
+  
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/favicon.png">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+        <div class="d-flex align-items-center gap-3">
+          <span><i class="bi bi-award text-warning me-1"></i> Official Publication of CARES, Federal University Dutse</span>
+          <span class="d-none d-md-inline">|</span>
+          <span class="d-none d-md-inline"><i class="bi bi-file-earmark-check text-warning me-1"></i> ISSN: 1597-1686</span>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <a href="index.html"><i class="bi bi-arrow-left me-1"></i> Return to CARES Main Site</a>
+          <a href="josae-submission.html" class="fw-bold text-warning"><i class="bi bi-send-fill me-1"></i> Submit Paper</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg main-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="josae.html">
+        <img src="assets/img/fud-logo.png" alt="Federal University Dutse Crest" class="fud-crest-img">
+        <div class="brand-text border-start ps-3 ms-1 d-none d-sm-block">
+          <h1 class="text-success fw-bold mb-0" style="font-size: 1.25rem; letter-spacing: 0.5px;">JOSAE &bull; FUD</h1>
+          <small class="text-warning fw-bold text-uppercase" style="font-size: 0.72rem; letter-spacing: 0.5px;">Journal of Smart Agriculture &amp; Extension Services</small>
+        </div>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarJosae" aria-controls="navbarJosae" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarJosae">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="josae.html">Current Issue</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="josae-archives.html">Archives &amp; Issues</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="josae-editorial.html">Editorial Board</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="josae-guidelines.html">Author Guidelines</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a class="btn btn-gold-fud text-white btn-sm" href="josae-submission.html">
+              <i class="bi bi-upload me-1"></i> Submit Manuscript
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Journal Hero Banner -->
+  <header class="hero-journal">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-8">
+          <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+            <span class="issn-pill"><i class="bi bi-upc-scan"></i> ISSN: 1597-1686</span>
+            <span class="badge bg-warning text-dark px-3 py-1 fw-bold">Bi-Annual Peer-Reviewed Journal</span>
+            <span class="badge bg-light text-dark px-3 py-1 fw-bold">Open Access</span>
+          </div>
+          <h1 class="display-5 fw-bold text-white mb-2">
+            Journal of Smart Agriculture and Extension Services (JOSAE)
+          </h1>
+          <p class="lead text-white-50 mb-4">
+            Published by Centre for Agricultural Research and Extension Services (CARES), Federal University Dutse, PMB 7156 Dutse, Jigawa State, Nigeria.
+          </p>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="#articlesSection" class="btn btn-warning fw-bold">
+              <i class="bi bi-book me-1"></i> Browse Vol. 1 No. 1 Articles
+            </a>
+            <a href="josae-guidelines.html" class="btn btn-outline-light">
+              <i class="bi bi-pencil-square me-1"></i> Author Guidelines &amp; Fees
+            </a>
+            <a href="assets/img/josae-call-for-papers.jpg" target="_blank" class="btn btn-outline-warning">
+              <i class="bi bi-download me-1"></i> Download Flyer / Call for Papers
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center">
+          <div class="card bg-white text-dark border-0 shadow-lg rounded-4 p-4 text-start">
+            <div class="badge bg-success mb-2">Latest Publication</div>
+            <h5 class="fw-bold text-success mb-1">Vol. 1 No. 1 (June 2023)</h5>
+            <p class="small text-muted mb-3">Published: June 2023 | 12 Research Articles</p>
+            <ul class="list-unstyled small text-secondary mb-3">
+              <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-1"></i> Full Preliminary Volume Available</li>
+              <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-1"></i> Free Open Access Download</li>
+              <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-1"></i> English Language</li>
+            </ul>
+            <a href="#articlesSection" class="btn btn-primary-fud btn-sm w-100">
+              <i class="bi bi-arrow-down-circle me-1"></i> Jump to Table of Contents
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About JOSAE Statement -->
+  <section class="py-4 bg-light border-bottom">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-12">
+          <div class="bg-white border rounded-3 p-4 shadow-sm">
+            <h4 class="fw-bold text-success mb-2"><i class="bi bi-info-circle-fill me-2"></i> About JOSAE</h4>
+            <p class="text-secondary mb-2">
+              The <strong>Journal of Smart Agriculture and Extension Services (JOSAE)</strong> aims to advance the field of agriculture and related disciplines by fostering innovation and the dissemination of research findings. Through an interdisciplinary approach encompassing social sciences, agritechnology, biotechnology, and the food supply system, JOSAE seeks to promote sustainable practices and increase productivity within agriculture.
+            </p>
+            <p class="text-secondary mb-0">
+              Our goal is to provide a platform for researchers and practitioners to share theoretical and practical insights that contribute to the development of smart agriculture. By accepting qualitative, quantitative, and mixed research, we aim to facilitate a comprehensive understanding of the challenges and opportunities facing the agricultural sector and to encourage the adoption of innovative solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content: Articles & Sidebar -->
+  <section class="section-padding" id="articlesSection">
+    <div class="container">
+      <div class="row gy-4">
+
+        <!-- Articles Column -->
+        <div class="col-lg-8">
+          <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+            <div>
+              <h3 class="fw-bold mb-0 text-success">Table of Contents</h3>
+              <span class="text-muted small">Vol. 1 No. 1, June 2023 &bull; Federal University Dutse</span>
+            </div>
+            <span class="badge bg-success px-3 py-2" id="searchResultsCount">Showing 12 of 12 articles</span>
+          </div>
+
+          <!-- Interactive Search & Discipline Filter Box -->
+          <div class="search-journal-box mb-4">
+            <div class="input-group mb-3">
+              <span class="input-group-text bg-white border-end-0 text-muted"><i class="bi bi-search"></i></span>
+              <input type="text" id="journalSearchInput" class="form-control border-start-0" placeholder="Search by paper title, author name, or topic (e.g. maize, cassava, climate, urea, ICT)...">
+            </div>
+            <div class="d-flex flex-wrap gap-2 align-items-center">
+              <span class="small fw-bold text-muted me-1">Filter by Discipline:</span>
+              <button class="btn btn-sm btn-primary-fud category-filter-btn active" data-filter="all">All Disciplines</button>
+              <button class="btn btn-sm btn-outline-fud category-filter-btn" data-filter="extension">Extension &amp; Economics</button>
+              <button class="btn btn-sm btn-outline-fud category-filter-btn" data-filter="crops-soils">Crops &amp; Soils</button>
+              <button class="btn btn-sm btn-outline-fud category-filter-btn" data-filter="livestock">Animal Science</button>
+              <button class="btn btn-sm btn-outline-fud category-filter-btn" data-filter="climate">Climate &amp; Tech</button>
+            </div>
+          </div>
+
+          <!-- ARTICLE 1 -->
+          <div class="article-card article-item" data-category="extension">
+            <div class="article-meta">
+              <span class="article-badge">Agricultural Extension &amp; Education</span>
+              <span><i class="bi bi-file-earmark-text me-1"></i> pp. 1–11</span>
+              <span><i class="bi bi-calendar3 me-1"></i> June 2023</span>
+              <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
+            </div>
+            <h4 class="article-title">
+              <a href="#art1">ASSESSMENT OF KNOWLEDGE AND ATTITUDE OF AGRICULTURAL EDUCATION STUDENTS’ ON CLIMATE CHANGE IN TAI SOLARIN COLLEGE OF EDUCATION, OMU-IJEBU, OGUN STATE, NIGERIA</a>
+            </h4>
+            <div class="article-authors">
+              <i class="bi bi-person-fill text-muted me-1"></i> <strong>Otufale G.A., Igbosanu A.O.</strong>
+            </div>
+            <div class="article-actions">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract1" aria-expanded="false">
+                <i class="bi bi-chevron-down me-1"></i> View Abstract
+              </button>
+              <a href="assets/img/josae-call-for-papers.jpg" target="_blank" class="btn btn-primary-fud btn-sm">
+                <i class="bi bi-file-earmark-pdf-fill me-1"></i> Download PDF
+              </a>
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Otufale, G.A., & Igbosanu, A.O. (2023). Assessment of Knowledge and Attitude of Agricultural Education Students’ on Climate Change in Tai Solarin College of Education, Omu-Ijebu, Ogun State, Nigeria. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), 1-11.">
+                <i class="bi bi-quote me-1"></i> Cite
+              </button>
+            </div>
+            <div class="collapse abstract-collapse" id="abstract1">
+              <strong>Abstract:</strong> This empirical study investigates the knowledge levels, perceptions, and attitudes of agricultural education students towards anthropogenic climate change, mitigation techniques, and climate-smart pedagogical curricula in tertiary educational institutions in southwestern Nigeria.
+            </div>
+          </div>
+
+          <!-- ARTICLE 2 -->
+          <div class="article-card article-item" data-category="livestock">
+            <div class="article-meta">
+              <span class="article-badge">Animal Nutrition &amp; Forage</span>
+              <span><i class="bi bi-file-earmark-text me-1"></i> pp. 12–17</span>
+              <span><i class="bi bi-calendar3 me-1"></i> June 2023</span>
+              <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
+            </div>
+            <h4 class="article-title">
+              <a href="#art2">EFFECTS OF PILIOSTIGMA THONINGII (KALGO) LEAVES DIETS ON PERFORMANCE AND DIGESTIBILITY OF KANO BROWN BUCKS IN SEMI-ARID ZONE OF NIGERIA</a>
+            </h4>
+            <div class="article-authors">
+              <i class="bi bi-person-fill text-muted me-1"></i> <strong>Ashiru, R. M., Iliyasu, K. A., Madu, A., Babandi, B., Ubayi, K. M., Ado, F. H., Sariyyu, S., Afolabi, H.O., Danzabuwa., A. A. and Jibrin, I.</strong>
+            </div>
+            <div class="article-actions">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract2" aria-expanded="false">
+                <i class="bi bi-chevron-down me-1"></i> View Abstract
+              </button>
+              <a href="assets/img/josae-call-for-papers.jpg" target="_blank" class="btn btn-primary-fud btn-sm">
+                <i class="bi bi-file-earmark-pdf-fill me-1"></i> Download PDF
+              </a>
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Ashiru, R. M., et al. (2023). Effects of Piliostigma thoningii (Kalgo) Leaves Diets on Performance and Digestibility of Kano Brown Bucks in Semi-Arid Zone of Nigeria. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), 12-17.">
+                <i class="bi bi-quote me-1"></i> Cite
+              </button>
+            </div>
+            <div class="collapse abstract-collapse" id="abstract2">
+              <strong>Abstract:</strong> Investigates the dietary inclusion of *Piliostigma thoningii* (locally known as Kalgo) leaves as an affordable dry-season browse supplement to enhance body weight gains, feed conversion ratio, and nutrient digestibility in growing Kano Brown bucks in northern Nigeria.
+            </div>
+          </div>
+
+          <!-- ARTICLE 3 -->
+          <div class="article-card article-item" data-category="climate">
+            <div class="article-meta">
+              <span class="article-badge">Climate Communication &amp; Media</span>
+              <span><i class="bi bi-file-earmark-text me-1"></i> pp. 18–25</span>
+              <span><i class="bi bi-calendar3 me-1"></i> June 2023</span>
+              <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
+            </div>
+            <h4 class="article-title">
+              <a href="#art3">EVALUATION OF CLIMATE CHANGE AND RELATED ISSUES COVERAGES WITHIN SOME SELECTED NIGERIAN NEWSPAPERS</a>
+            </h4>
+            <div class="article-authors">
+              <i class="bi bi-person-fill text-muted me-1"></i> <strong>A. Abubakar, H. I. Ibrahim and G.T. Adejare</strong>
+            </div>
+            <div class="article-actions">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract3" aria-expanded="false">
+                <i class="bi bi-chevron-down me-1"></i> View Abstract
+              </button>
+              <a href="assets/img/josae-call-for-papers.jpg" target="_blank" class="btn btn-primary-fud btn-sm">
+                <i class="bi bi-file-earmark-pdf-fill me-1"></i> Download PDF
+              </a>
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Abubakar, A., Ibrahim, H. I., & Adejare, G.T. (2023). Evaluation of Climate Change and Related Issues Coverages Within Some Selected Nigerian Newspapers. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), 18-25.">
+                <i class="bi bi-quote me-1"></i> Cite
+              </button>
+            </div>
+            <div class="collapse abstract-collapse" id="abstract3">
+              <strong>Abstract:</strong> Content analysis assessing the frequency, prominence, depth, and framing of climate change, drought, flood disasters, and agricultural adaptation reports across major national daily newspapers in Nigeria.
+            </div>
+          </div>
+
+          <!-- ARTICLE 4 -->
+          <div class="article-card article-item" data-category="extension">
+            <div class="article-meta">
+              <span class="article-badge">Food Processing &amp; Gender</span>
+              <span><i class="bi bi-file-earmark-text me-1"></i> pp. 26–34</span>
+              <span><i class="bi bi-calendar3 me-1"></i> June 2023</span>
+              <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
+            </div>
+            <h4 class="article-title">
+              <a href="#art4">ASSESSMENT OF THE UTILIZATION OF CASSAVA PROCESSING TECHNOLOGIES AMONG WOMEN PROCESSORS IN EKITI STATE, NIGERIA</a>
+            </h4>
+            <div class="article-authors">
+              <i class="bi bi-person-fill text-muted me-1"></i> <strong>Adewumi, O.T., Ajala, A.O., Bamigboye, O.T, Fanu, A.T, Oke, O.S.</strong>
+            </div>
+            <div class="article-actions">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract4" aria-expanded="false">
+                <i class="bi bi-chevron-down me-1"></i> View Abstract
+              </button>
+              <a href="assets/img/josae-call-for-papers.jpg" target="_blank" class="btn btn-primary-fud btn-sm">
+                <i class="bi bi-file-earmark-pdf-fill me-1"></i> Download PDF
+              </a>
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Adewumi, O.T., et al. (2023). Assessment of the Utilization of Cassava Processing Technologies Among Women Processors in Ekiti State, Nigeria. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), 26-34.">
+                <i class="bi bi-quote me-1"></i> Cite
+              </button>
+            </div>
+            <div class="collapse abstract-collapse" id="abstract4">
+              <strong>Abstract:</strong> Evaluates the adoption levels, technical efficiency, labor savings, and socio-economic constraints encountered by rural women cassava processors in utilizing mechanized graters, hydraulic pressers, and improved frying equipment.
+            </div>
+          </div>
+
+          <!-- ARTICLE 5 -->
+          <div class="article-card article-item" data-category="extension">
+            <div class="article-meta">
+              <span class="article-badge">Rural Sociology &amp; Livelihoods</span>
+              <span><i class="bi bi-file-earmark-text me-1"></i> pp. 35–42</span>
+              <span><i class="bi bi-calendar3 me-1"></i> June 2023</span>
+              <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
+            </div>
+            <h4 class="article-title">
+              <a href="#art5">ROLES OF COMMUNITY AND SOCIAL DEVELOPMENT PROJECT (CSDP) ON THE LIVELIHOODS OF RURAL FARMERS IN KATSINA STATE, NIGERIA</a>
+            </h4>
+            <div class="article-authors">
+              <i class="bi bi-person-fill text-muted me-1"></i> <strong>Tafida, I. Abdullahi, A. and Suleiman, A.</strong>
+            </div>
+            <div class="article-actions">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract5" aria-expanded="false">
+                <i class="bi bi-chevron-down me-1"></i> View Abstract
+              </button>
+              <a href="assets/img/josae-call-for-papers.jpg" target="_blank" class="btn btn-primary-fud btn-sm">
+                <i class="bi bi-file-earmark-pdf-fill me-1"></i> Download PDF
+              </a>
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Tafida, I., Abdullahi, A., & Suleiman, A. (2023). Roles of Community and Social Development Project (CSDP) on the Livelihoods of Rural Farmers in Katsina State, Nigeria. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), 35-42.">
+                <i class="bi bi-quote me-1"></i> Cite
+              </button>
+            </div>
+            <div class="collapse abstract-collapse" id="abstract5">
+              <strong>Abstract:</strong> Examines the micro-level impacts of CSDP micro-projects (feeder roads, borehole irrigation, processing centres) on income enhancement, poverty reduction, and livelihood assets of rural farming households in Katsina State.
+            </div>
+          </div>
+
+          <!-- ARTICLE 6 -->
+          <div class="article-card article-item" data-category="climate">
+            <div class="article-meta">
+              <span class="article-badge">Agritech &amp; ICT In Agriculture</span>
+              <span><i class="bi bi-file-earmark-text me-1"></i> pp. 43–51</span>
+              <span><i class="bi bi-calendar3 me-1"></i> June 2023</span>
+              <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
+            </div>
+            <h4 class="article-title">
+              <a href="#art6">RICE FARMERS’ UTILIZATION OF INFORMATION COMMUNICATION TECHNOLOGIES IN WESTERN AGRICULTURAL ZONE OF BAUCHI STATE, NIGERIA</a>
+            </h4>
+            <div class="article-authors">
+              <i class="bi bi-person-fill text-muted me-1"></i> <strong>Itse V., Abdullahi, S. and Abu, A. I.</strong>
+            </div>
+            <div class="article-actions">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract6" aria-expanded="false">
+                <i class="bi bi-chevron-down me-1"></i> View Abstract
+              </button>
+              <a href="assets/img/josae-call-for-papers.jpg" target="_blank" class="btn btn-primary-fud btn-sm">
+                <i class="bi bi-file-earmark-pdf-fill me-1"></i> Download PDF
+              </a>
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Itse, V., Abdullahi, S., & Abu, A. I. (2023). Rice Farmers’ Utilization of Information Communication Technologies in Western Agricultural Zone of Bauchi State, Nigeria. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), 43-51.">
+                <i class="bi bi-quote me-1"></i> Cite
+              </button>
+            </div>
+            <div class="collapse abstract-collapse" id="abstract6">
+              <strong>Abstract:</strong> Investigates the accessibility and adoption frequency of mobile phones, radio, SMS alerts, and internet portals for sourcing input prices, weather forecasts, and pest management advisory by smallholder rice growers in Bauchi State.
+            </div>
+          </div>
+
+          <!-- ARTICLE 7 -->
+          <div class="article-card article-item" data-category="crops-soils">
+            <div class="article-meta">
+              <span class="article-badge">Soil Science &amp; Agronomy</span>
+              <span><i class="bi bi-file-earmark-text me-1"></i> pp. 52–58</span>
+              <span><i class="bi bi-calendar3 me-1"></i> June 2023</span>
+              <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
+            </div>
+            <h4 class="article-title">
+              <a href="#art7">NITROGEN USE EFFICIENCY (NUE), N CONCENTRATION, UPTAKE AND YIELD PARAMETERS OF MAIZE AS INFLUENCED BY DIFFERENT NITROGEN FERTILIZER RATES IN NORTHERN GUINEA SAVANNA ALFISOLS</a>
+            </h4>
+            <div class="article-authors">
+              <i class="bi bi-person-fill text-muted me-1"></i> <strong>Khalid T. K., Garba A.R., Gaya M.I., Malami M. and Bilyaminu A.B.</strong>
+            </div>
+            <div class="article-actions">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract7" aria-expanded="false">
+                <i class="bi bi-chevron-down me-1"></i> View Abstract
+              </button>
+              <a href="assets/img/josae-call-for-papers.jpg" target="_blank" class="btn btn-primary-fud btn-sm">
+                <i class="bi bi-file-earmark-pdf-fill me-1"></i> Download PDF
+              </a>
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Khalid, T. K., et al. (2023). Nitrogen Use Efficiency (NUE), N Concentration, Uptake and Yield Parameters of Maize as Influenced by Different Nitrogen Fertilizer Rates in Northern Guinea Savanna Alfisols. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), 52-58.">
+                <i class="bi bi-quote me-1"></i> Cite
+              </button>
+            </div>
+            <div class="collapse abstract-collapse" id="abstract7">
+              <strong>Abstract:</strong> Field experiments determining agronomic efficiency, physiological efficiency, nitrogen recovery fraction, and grain yield responses of maize across calibrated nitrogen fertilization levels in savanna Alfisols.
+            </div>
+          </div>
+
+          <!-- ARTICLE 8 -->
+          <div class="article-card article-item" data-category="crops-soils">
+            <div class="article-meta">
+              <span class="article-badge">Soil Microbiology &amp; Fertility</span>
+              <span><i class="bi bi-file-earmark-text me-1"></i> pp. 59–65</span>
+              <span><i class="bi bi-calendar3 me-1"></i> June 2023</span>
+              <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
+            </div>
+            <h4 class="article-title">
+              <a href="#art8">INFLUENCE OF COW DUNG AND UREA FERTILIZER ON SOIL pH, OC, TN AND MICROBIAL POPULATION UNDER MAIZE POT EXPERIMENT IN A SAVANNA ALFISOLS</a>
+            </h4>
+            <div class="article-authors">
+              <i class="bi bi-person-fill text-muted me-1"></i> <strong>Khalid T. K., Uyovbisere E.O., Abdullahi A.A., Malami M., and Bilyaminu A.B.</strong>
+            </div>
+            <div class="article-actions">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract8" aria-expanded="false">
+                <i class="bi bi-chevron-down me-1"></i> View Abstract
+              </button>
+              <a href="assets/img/josae-call-for-papers.jpg" target="_blank" class="btn btn-primary-fud btn-sm">
+                <i class="bi bi-file-earmark-pdf-fill me-1"></i> Download PDF
+              </a>
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Khalid, T. K., et al. (2023). Influence of Cow Dung and Urea Fertilizer on Soil pH, OC, TN and Microbial Population under Maize Pot Experiment in a Savanna Alfisols. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), 59-65.">
+                <i class="bi bi-quote me-1"></i> Cite
+              </button>
+            </div>
+            <div class="collapse abstract-collapse" id="abstract8">
+              <strong>Abstract:</strong> Evaluates the combined application of animal manure (cow dung) and mineral nitrogen (urea) on soil chemical parameters (pH, organic carbon, total nitrogen) and total bacterial/fungal microbial colonies.
+            </div>
+          </div>
+
+          <!-- ARTICLE 9 -->
+          <div class="article-card article-item" data-category="extension">
+            <div class="article-meta">
+              <span class="article-badge">Agricultural Extension &amp; Gender</span>
+              <span><i class="bi bi-file-earmark-text me-1"></i> pp. 66–73</span>
+              <span><i class="bi bi-calendar3 me-1"></i> June 2023</span>
+              <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
+            </div>
+            <h4 class="article-title">
+              <a href="#art9">ANALYSIS OF DETERMINANTS OF ACCESS TO EXTENSION SERVICES AMONG WOMEN FARMERS IN NORTHERN ZONE OF PLATEAU STATE, NIGERIA</a>
+            </h4>
+            <div class="article-authors">
+              <i class="bi bi-person-fill text-muted me-1"></i> <strong>Makvereng, S., Abdullahi S., Abdurahman S. and Satdom S. M.</strong>
+            </div>
+            <div class="article-actions">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract9" aria-expanded="false">
+                <i class="bi bi-chevron-down me-1"></i> View Abstract
+              </button>
+              <a href="assets/img/josae-call-for-papers.jpg" target="_blank" class="btn btn-primary-fud btn-sm">
+                <i class="bi bi-file-earmark-pdf-fill me-1"></i> Download PDF
+              </a>
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Makvereng, S., et al. (2023). Analysis of Determinants of Access to Extension Services Among Women Farmers in Northern Zone of Plateau State, Nigeria. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), 66-73.">
+                <i class="bi bi-quote me-1"></i> Cite
+              </button>
+            </div>
+            <div class="collapse abstract-collapse" id="abstract9">
+              <strong>Abstract:</strong> Uses logit econometric modeling to identify key institutional, socioeconomic, and cultural factors dictating extension contact and advisory services for rural female food crop producers in Plateau State.
+            </div>
+          </div>
+
+          <!-- ARTICLE 10 -->
+          <div class="article-card article-item" data-category="climate">
+            <div class="article-meta">
+              <span class="article-badge">Climate Adaptation &amp; Agronomy</span>
+              <span><i class="bi bi-file-earmark-text me-1"></i> pp. 74–81</span>
+              <span><i class="bi bi-calendar3 me-1"></i> June 2023</span>
+              <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
+            </div>
+            <h4 class="article-title">
+              <a href="#art10">DETERMINANT OF ADAPTATION STRATEGIES TO CLIMATE CHANGE BY CASSAVA FARMERS IN ANAMBRA STATE, NIGERIA</a>
+            </h4>
+            <div class="article-authors">
+              <i class="bi bi-person-fill text-muted me-1"></i> <strong>O. Abojei, S. I Ume and A. I. N Kaine</strong>
+            </div>
+            <div class="article-actions">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract10" aria-expanded="false">
+                <i class="bi bi-chevron-down me-1"></i> View Abstract
+              </button>
+              <a href="assets/img/josae-call-for-papers.jpg" target="_blank" class="btn btn-primary-fud btn-sm">
+                <i class="bi bi-file-earmark-pdf-fill me-1"></i> Download PDF
+              </a>
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Abojei, O., Ume, S. I., & Kaine, A. I. N. (2023). Determinant of Adaptation Strategies to Climate Change by Cassava Farmers in Anambra State, Nigeria. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), 74-81.">
+                <i class="bi bi-quote me-1"></i> Cite
+              </button>
+            </div>
+            <div class="collapse abstract-collapse" id="abstract10">
+              <strong>Abstract:</strong> Explores indigenous adaptation options—such as staggered planting, early maturing cultivars, and mulching—employed by cassava growers against shifting rainfall patterns and heat stress in southeastern Nigeria.
+            </div>
+          </div>
+
+          <!-- ARTICLE 11 -->
+          <div class="article-card article-item" data-category="extension">
+            <div class="article-meta">
+              <span class="article-badge">Agricultural Economics</span>
+              <span><i class="bi bi-file-earmark-text me-1"></i> pp. 82–89</span>
+              <span><i class="bi bi-calendar3 me-1"></i> June 2023</span>
+              <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
+            </div>
+            <h4 class="article-title">
+              <a href="#art11">ASSESSMENTS OF SOCIO-ECONOMIC FACTORS INFLUENCING SMALLHOLDER VEGETABLE-FARMERS’ INCOME IN SOME SELECTED LOCAL GOVERNMENT AREAS OF KADUNA STATE, NIGERIA</a>
+            </h4>
+            <div class="article-authors">
+              <i class="bi bi-person-fill text-muted me-1"></i> <strong>Owolabi, J.O. and Olajide, H. D.</strong>
+            </div>
+            <div class="article-actions">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract11" aria-expanded="false">
+                <i class="bi bi-chevron-down me-1"></i> View Abstract
+              </button>
+              <a href="assets/img/josae-call-for-papers.jpg" target="_blank" class="btn btn-primary-fud btn-sm">
+                <i class="bi bi-file-earmark-pdf-fill me-1"></i> Download PDF
+              </a>
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Owolabi, J.O., & Olajide, H. D. (2023). Assessments of Socio-Economic Factors Influencing Smallholder Vegetable-Farmers’ Income in Some Selected Local Government Areas of Kaduna State, Nigeria. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), 82-89.">
+                <i class="bi bi-quote me-1"></i> Cite
+              </button>
+            </div>
+            <div class="collapse abstract-collapse" id="abstract11">
+              <strong>Abstract:</strong> Analyzes farm enterprise budgets, gross margins, credit constraints, and market channel access shaping net returns for peri-urban vegetable producers in Kaduna State.
+            </div>
+          </div>
+
+          <!-- ARTICLE 12 -->
+          <div class="article-card article-item" data-category="extension">
+            <div class="article-meta">
+              <span class="article-badge">Rural Development &amp; Welfare</span>
+              <span><i class="bi bi-file-earmark-text me-1"></i> pp. 90–97</span>
+              <span><i class="bi bi-calendar3 me-1"></i> June 2023</span>
+              <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
+            </div>
+            <h4 class="article-title">
+              <a href="#art12">ASSESSMENT OF NON-FARM ACTIVITIES INVOLVEMENT ON THE WELFARE STATUS OF ARABLE CROP FARMERS IN OYO STATE, NIGERIA</a>
+            </h4>
+            <div class="article-authors">
+              <i class="bi bi-person-fill text-muted me-1"></i> <strong>Sadiq, M. M., Ariwoola, S. A. and Adisa, J. O.</strong>
+            </div>
+            <div class="article-actions">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract12" aria-expanded="false">
+                <i class="bi bi-chevron-down me-1"></i> View Abstract
+              </button>
+              <a href="assets/img/josae-call-for-papers.jpg" target="_blank" class="btn btn-primary-fud btn-sm">
+                <i class="bi bi-file-earmark-pdf-fill me-1"></i> Download PDF
+              </a>
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Sadiq, M. M., Ariwoola, S. A., & Adisa, J. O. (2023). Assessment of Non-Farm Activities Involvement on the Welfare Status of Arable Crop Farmers in Oyo State, Nigeria. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), 90-97.">
+                <i class="bi bi-quote me-1"></i> Cite
+              </button>
+            </div>
+            <div class="collapse abstract-collapse" id="abstract12">
+              <strong>Abstract:</strong> Investigates the contribution of non-agricultural enterprise engagement (artisanal trades, commodity trading) toward household expenditure, asset acquisition, and food security buffers in Oyo State farming communities.
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Sidebar Column -->
+        <div class="col-lg-4">
+          <div class="sidebar-sticky">
+
+            <!-- Journal Metadata Card -->
+            <div class="card border-0 shadow-sm rounded-3 mb-4">
+              <div class="card-header bg-success text-white py-3 fw-bold">
+                <i class="bi bi-journal-check me-2"></i> Journal Information
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush small">
+                  <li class="list-group-item d-flex justify-content-between px-0">
+                    <span class="text-muted">ISSN:</span>
+                    <span class="fw-bold text-dark">1597-1686</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between px-0">
+                    <span class="text-muted">Frequency:</span>
+                    <span class="fw-bold">Bi-annual (June &amp; Dec)</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between px-0">
+                    <span class="text-muted">Language:</span>
+                    <span class="fw-bold">English</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between px-0">
+                    <span class="text-muted">Review Type:</span>
+                    <span class="fw-bold">Double-Blind Peer Review</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between px-0">
+                    <span class="text-muted">Publisher:</span>
+                    <span class="fw-bold text-end">CARES, Federal University Dutse</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between px-0">
+                    <span class="text-muted">Printer:</span>
+                    <span class="fw-bold">Kabod Limited, Kaduna</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Quick Navigation Menu -->
+            <div class="quick-nav-card">
+              <div class="quick-nav-header">
+                <i class="bi bi-compass me-2"></i> Journal Quick Links
+              </div>
+              <div class="quick-nav-list">
+                <a href="josae.html"><span class="fw-bold text-success"><i class="bi bi-book-fill me-2"></i>Current Issue (Vol 1 No 1)</span> <i class="bi bi-chevron-right"></i></a>
+                <a href="josae-archives.html"><span><i class="bi bi-archive-fill me-2"></i>Archives &amp; Past Volumes</span> <i class="bi bi-chevron-right"></i></a>
+                <a href="josae-editorial.html"><span><i class="bi bi-people-fill me-2"></i>Editorial Advisory Council</span> <i class="bi bi-chevron-right"></i></a>
+                <a href="josae-guidelines.html"><span><i class="bi bi-file-text-fill me-2"></i>Author Guidelines &amp; Fees</span> <i class="bi bi-chevron-right"></i></a>
+                <a href="josae-submission.html"><span><i class="bi bi-send-fill me-2"></i>Manuscript Submission Portal</span> <i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+
+            <!-- Call for Papers Banner / Bank Account Box -->
+            <div class="bank-detail-card mb-4">
+              <div class="badge bg-warning text-dark fw-bold mb-2">Official Bank Details</div>
+              <h5 class="fw-bold text-white mb-2">Journal Account (GTBank)</h5>
+              <div class="small text-white-50 mb-3">For Handling and Publication Fees</div>
+              
+              <div class="bg-white bg-opacity-10 p-3 rounded-3 mb-3 border border-white border-opacity-25">
+                <div class="small text-warning fw-semibold">ACCOUNT NAME:</div>
+                <div class="fw-bold text-white small">JOURNAL OF SMART AGRICULTURE AND EXTENSION SERVICES (JAES)</div>
+                <div class="small text-warning fw-semibold mt-2">ACCOUNT NUMBER:</div>
+                <div class="fs-4 fw-black text-warning tracking-wider">0835783652</div>
+                <div class="small text-white-50 mt-1">Bank: Guaranty Trust Bank (GTB) &bull; Branch: DUTSE</div>
+              </div>
+
+              <div class="small text-white-50 mb-2">
+                &bull; <strong>Handling Fee:</strong> &#8358;5,000 / $25<br>
+                &bull; <strong>Publication Fee:</strong> &#8358;20,000 (upon acceptance)
+              </div>
+              <a href="josae-guidelines.html" class="btn btn-warning btn-sm w-100 fw-bold">
+                <i class="bi bi-arrow-right-circle me-1"></i> Read Submission Procedure
+              </a>
+            </div>
+
+            <!-- Editorial Contacts Card -->
+            <div class="card border-0 shadow-sm rounded-3 p-3 bg-light">
+              <h6 class="fw-bold text-dark mb-2"><i class="bi bi-telephone-fill text-success me-1"></i> Editorial Contacts</h6>
+              <ul class="list-unstyled small text-secondary mb-0">
+                <li class="mb-1"><strong>Editor-in-Chief:</strong> +234 803 418 3266</li>
+                <li class="mb-1"><strong>Deputy Editor-in-Chief:</strong> +234 803 966 2556</li>
+                <li class="mb-1"><strong>Business Editor:</strong> +234 803 587 1740</li>
+                <li class="mb-1"><strong>Deputy Business Editor:</strong> +234 803 697 6320</li>
+                <li><strong>Email:</strong> <a href="mailto:josaecares@fud.edu.ng">josaecares@fud.edu.ng</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <img src="assets/img/fud-logo.png" alt="Federal University Dutse Logo" class="bg-white p-1 rounded-circle footer-fud-logo">
+            <div class="text-white">
+              <h6 class="fw-bold mb-0 text-white">Federal University Dutse</h6>
+              <small class="text-warning">CARES &bull; JOSAE Journal Office</small>
+            </div>
+          </div>
+          <p class="text-secondary small">
+            Centre for Agricultural Research and Extension Services (CARES), Federal University Dutse (FUD), Nigeria. Publisher of JOSAE.
+          </p>
+          <div class="small text-secondary">
+            <i class="bi bi-geo-alt-fill text-warning me-1"></i> PMB 7156 Dutse, Jigawa State – Nigeria
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-2">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">CARES Main Site</a></li>
+            <li><a href="about.html">About Centre</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <h5>JOSAE Journal</h5>
+          <ul class="footer-links">
+            <li><a href="josae.html">Current Issue (Vol 1 No 1)</a></li>
+            <li><a href="josae-archives.html">Archives</a></li>
+            <li><a href="josae-editorial.html">Editorial Board</a></li>
+            <li><a href="josae-guidelines.html">Author Guidelines</a></li>
+            <li><a href="josae-submission.html">Submit Manuscript</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5>Journal Office</h5>
+          <p class="small text-secondary mb-2">
+            <strong>Email:</strong> <a href="mailto:josaecares@fud.edu.ng" class="text-warning">josaecares@fud.edu.ng</a><br>
+            <strong>Website:</strong> cares.fud.edu.ng
+          </p>
+          <div class="issn-pill">
+            <i class="bi bi-award"></i> ISSN: 1597-1686
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom text-center text-secondary">
+        <div class="container">
+          <p class="mb-1">&copy; <span id="currentYear">2024</span> JOSAE &bull; Federal University Dutse, Jigawa State. Printed by Kabod Limited.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

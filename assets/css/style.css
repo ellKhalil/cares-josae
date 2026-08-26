@@ -1,0 +1,599 @@
+/* ==========================================================================
+   CARES & JOSAE - Modern Academic Theme
+   Centre for Agricultural Research and Extension Services
+   Federal University Dutse (FUD), Nigeria
+   ========================================================================== */
+
+:root {
+  --fud-green-dark: #073822;
+  --fud-green: #0e5a36;
+  --fud-green-light: #167a4a;
+  --fud-green-subtle: #e8f5ed;
+  --fud-gold: #c98a1a;
+  --fud-gold-light: #f5b041;
+  --fud-gold-subtle: #fef8ec;
+  --text-dark: #1e293b;
+  --text-muted: #64748b;
+  --bg-light: #f8fafc;
+  --card-border: #e2e8f0;
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.04);
+  --shadow-md: 0 6px 18px rgba(0,0,0,0.06);
+  --shadow-lg: 0 12px 30px rgba(0,0,0,0.1);
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-serif: 'Merriweather', Georgia, serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--text-dark);
+  background-color: #ffffff;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: var(--fud-green-dark);
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: var(--fud-green);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--fud-gold);
+}
+
+/* Top Bar */
+.top-bar {
+  background: var(--fud-green-dark);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.85rem;
+  padding: 6px 0;
+  border-bottom: 2px solid var(--fud-gold);
+}
+
+.top-bar a {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.top-bar a:hover {
+  color: var(--fud-gold-light);
+}
+
+/* Navbar */
+.main-navbar {
+  background: #ffffff;
+  box-shadow: var(--shadow-sm);
+  padding: 12px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.fud-crest-img {
+  height: 42px;
+  max-height: 42px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.08));
+  transition: transform 0.2s ease;
+}
+
+.footer-fud-logo {
+  height: 44px;
+  max-height: 44px;
+  width: auto;
+  object-fit: contain;
+}
+
+.navbar-brand:hover .fud-crest-img {
+  transform: scale(1.03);
+}
+
+.brand-text h1 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin: 0;
+  color: var(--fud-green-dark);
+  line-height: 1.15;
+}
+
+.brand-text small {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--fud-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  display: block;
+}
+
+.nav-link {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-dark) !important;
+  padding: 8px 14px !important;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--fud-green) !important;
+  background-color: var(--fud-green-subtle);
+}
+
+.btn-journal-badge {
+  background: linear-gradient(135deg, var(--fud-green), var(--fud-green-dark));
+  color: #fff !important;
+  border-radius: 20px;
+  padding: 7px 18px !important;
+  font-size: 0.88rem;
+  box-shadow: 0 3px 8px rgba(14, 90, 54, 0.25);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-journal-badge:hover {
+  background: linear-gradient(135deg, var(--fud-gold), #b87910);
+  color: #fff !important;
+  transform: translateY(-1px);
+}
+
+/* Heroes */
+.hero-cares {
+  background: linear-gradient(135deg, rgba(7, 56, 34, 0.92), rgba(14, 90, 54, 0.88)), url('https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  color: #ffffff;
+  padding: 85px 0;
+  position: relative;
+}
+
+.hero-cares h1 {
+  color: #ffffff;
+  font-size: 2.85rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.hero-cares .lead {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.hero-journal {
+  background: linear-gradient(135deg, #073822 0%, #115735 100%);
+  color: #ffffff;
+  padding: 60px 0 50px;
+  border-bottom: 4px solid var(--fud-gold);
+}
+
+.hero-journal h1 {
+  color: #ffffff;
+  font-size: 2.35rem;
+  font-weight: 800;
+}
+
+.issn-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 5px 16px;
+  border-radius: 20px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #fde68a;
+}
+
+/* Feature Cards & Sections */
+.section-padding {
+  padding: 70px 0;
+}
+
+.section-title {
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 2.1rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 12px;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3.5px;
+  background: var(--fud-gold);
+  border-radius: 2px;
+}
+
+.section-title p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  max-width: 680px;
+  margin: 10px auto 0;
+}
+
+.feature-card {
+  background: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 28px;
+  height: 100%;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(14, 90, 54, 0.3);
+}
+
+.feature-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  background: var(--fud-green-subtle);
+  color: var(--fud-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.feature-card:hover .feature-icon {
+  background: var(--fud-green);
+  color: #ffffff;
+}
+
+/* Journal Article Cards (JOSAE Table of Contents) */
+.article-card {
+  background: #ffffff;
+  border: 1px solid var(--card-border);
+  border-left: 4px solid var(--fud-green);
+  border-radius: 8px;
+  padding: 22px 24px;
+  margin-bottom: 22px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.25s ease;
+}
+
+.article-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--fud-gold);
+  border-left-color: var(--fud-gold);
+}
+
+.article-meta {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.article-badge {
+  background-color: var(--fud-green-subtle);
+  color: var(--fud-green-dark);
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.article-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.article-title a {
+  color: var(--fud-green-dark);
+}
+
+.article-title a:hover {
+  color: var(--fud-gold);
+}
+
+.article-authors {
+  font-size: 0.92rem;
+  color: #475569;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.article-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.abstract-collapse {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 14px;
+  font-size: 0.92rem;
+  color: #334155;
+  line-height: 1.65;
+}
+
+/* Editorial Board Cards */
+.board-card {
+  background: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  transition: all 0.2s ease;
+}
+
+.board-card:hover {
+  border-color: var(--fud-green);
+  box-shadow: var(--shadow-md);
+}
+
+.board-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--fud-green-subtle);
+  color: var(--fud-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.board-info h5 {
+  font-size: 1.05rem;
+  margin-bottom: 3px;
+  color: var(--fud-green-dark);
+}
+
+.board-info p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.guidelines-box {
+  background: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+}
+
+.bank-detail-card {
+  background: linear-gradient(135deg, #073822, #0e5a36);
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 26px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.bank-detail-card::before {
+  content: 'GTBANK';
+  position: absolute;
+  right: -10px;
+  bottom: -15px;
+  font-size: 4rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.05);
+  letter-spacing: 2px;
+}
+
+/* Sidebar & Quick Nav */
+.sidebar-sticky {
+  position: sticky;
+  top: 90px;
+}
+
+.quick-nav-card {
+  background: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 25px;
+}
+
+.quick-nav-header {
+  background: var(--fud-green);
+  color: #ffffff;
+  padding: 14px 18px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.quick-nav-list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--card-border);
+  color: var(--text-dark);
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+.quick-nav-list a:last-child {
+  border-bottom: none;
+}
+
+.quick-nav-list a:hover {
+  background-color: var(--fud-green-subtle);
+  color: var(--fud-green);
+  padding-left: 22px;
+}
+
+/* Buttons */
+.btn-primary-fud {
+  background-color: var(--fud-green);
+  border-color: var(--fud-green);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.btn-primary-fud:hover {
+  background-color: var(--fud-green-dark);
+  border-color: var(--fud-green-dark);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.btn-gold-fud {
+  background-color: var(--fud-gold);
+  border-color: var(--fud-gold);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 6px;
+}
+
+.btn-gold-fud:hover {
+  background-color: #b0750e;
+  border-color: #b0750e;
+  color: #ffffff;
+}
+
+.btn-outline-fud {
+  border: 1.5px solid var(--fud-green);
+  color: var(--fud-green);
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 6px;
+  background: transparent;
+}
+
+.btn-outline-fud:hover {
+  background-color: var(--fud-green);
+  color: #ffffff;
+}
+
+/* Footer */
+.main-footer {
+  background: #052617;
+  color: #cbd5e1;
+  padding: 60px 0 25px;
+  font-size: 0.92rem;
+  border-top: 4px solid var(--fud-gold);
+}
+
+.main-footer h4, .main-footer h5 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.main-footer a {
+  color: #94a3b8;
+}
+
+.main-footer a:hover {
+  color: var(--fud-gold-light);
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 22px;
+  margin-top: 45px;
+  font-size: 0.85rem;
+}
+
+/* Search bar */
+.search-journal-box {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--card-border);
+  margin-bottom: 30px;
+}
+
+.search-journal-box input {
+  border-radius: 6px;
+  border: 1.5px solid #cbd5e1;
+  padding: 10px 14px;
+}
+
+.search-journal-box input:focus {
+  border-color: var(--fud-green);
+  box-shadow: 0 0 0 0.2rem rgba(14, 90, 54, 0.15);
+}
+
+/* Issue Cover Banner Card */
+.issue-cover-card {
+  background: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.issue-cover-header {
+  background: linear-gradient(135deg, #073822, #0e5a36);
+  color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 3px solid var(--fud-gold);
+}
+
+.issue-cover-header h3 {
+  color: #ffffff;
+  font-size: 1.35rem;
+  margin-bottom: 4px;
+}
+
+.journal-cover-preview {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: var(--shadow-lg);
+  padding: 20px;
+  text-align: center;
+}
