@@ -7,13 +7,13 @@
 
 ---
 
-## 📁 Website Structure
+## 📁 Repository & Website Structure
 
 ```
-CARES/
+cares-josae/
 ├── index.html                  # CARES Main Portal (Mission, Pillars, JOSAE Spotlight, Contact)
 ├── about.html                  # About CARES (Mandate, Extension Services, Leadership)
-├── josae.html                  # JOSAE Journal Portal & Volume 1 Number 1 Table of Contents
+├── josae.html                  # JOSAE Journal Portal (Volume 1 Issues 1 & 2 Articles & Downloads)
 ├── josae-archives.html         # Published Volumes & Journal Archives
 ├── josae-editorial.html        # Complete Editorial Advisory Board & Reviewers
 ├── josae-guidelines.html       # Author Guidelines, Call for Papers & GTBank Details
@@ -23,13 +23,15 @@ CARES/
 │   ├── css/
 │   │   └── style.css           # Modern Academic Green & Gold Bootstrap 5.3 Theme
 │   ├── js/
-│   │   └── main.js             # Real-time search, filter, abstract collapse, citation copy
+│   │   └── main.js             # Multi-issue real-time search, filter, abstract collapse, citation copy
 │   ├── img/
+│   │   ├── fud-logo.png        # Official Federal University Dutse Crest / Favicon
 │   │   ├── logo-cares.svg      # CARES High-Resolution Vector Brand
 │   │   ├── logo-josae.svg      # JOSAE High-Resolution Vector Brand
 │   │   └── josae-call-for-papers.jpg # Original Call for Papers Flyer
 │   └── docs/
-│       └── (Place your full volume or paper PDFs here e.g. JOSAE-Vol1-No1.pdf)
+│       ├── vol1-issue1/        # All 13 final PDF articles for Volume 1 Issue 1 (June 2023)
+│       └── vol1-issue2/        # All 12 accepted manuscripts for Volume 1 Issue 2 (Dec 2023)
 └── README.md
 ```
 
@@ -37,12 +39,12 @@ CARES/
 
 ## 🚀 How to Deploy to cPanel (Step-by-Step)
 
-1. **Compress the Folder**:
-   - Select all files inside `/Users/khalil/Desktop/CARES/` (`index.html`, `about.html`, `josae.html`, `assets/`, etc.).
+1. **Compress the Repository Files**:
+   - Select all files inside `/Users/khalil/Documents/GitHub/cares-josae/` (`index.html`, `about.html`, `josae.html`, `assets/`, etc.).
    - Compress them into a single `.zip` file (e.g., `cares-website.zip`).
 
 2. **Log in to cPanel**:
-   - Open your university cPanel: `https://fud.edu.ng:2083` (or your specific cPanel URL).
+   - Open your university cPanel: `https://fud.edu.ng:2083` (or your specific cPanel hosting URL).
    - Go to **File Manager**.
 
 3. **Navigate to the Subdomain Root Directory**:
@@ -61,14 +63,13 @@ CARES/
 
 ## 📄 Key Features Included
 
-- **No PHP/Database dependencies required**: Pure modern HTML5, Bootstrap 5.3, and lightweight Vanilla JS. Loads ultra-fast and zero maintenance.
-- **Dedicated JOSAE Journal Portal**:
-  - Contains all 12 published articles from **Volume 1 Number 1 (June 2023)**.
-  - Interactive **real-time search bar** (search by author, title keyword, or topic).
-  - Category filter buttons (Extension, Soils/Crops, Livestock, Climate).
-  - Expandable abstracts for each article.
-  - **One-click APA 7th Edition citation copier**.
-  - Direct PDF download hooks.
+- **No Database / PHP Backend Required**: Ultra-fast, lightweight, pure Bootstrap 5.3 + Vanilla JS.
+- **Dedicated Multi-Issue JOSAE Journal Portal**:
+  - **Volume 1 Issue 2 (December 2023)**: 12 research papers with abstracts, citations, and download links.
+  - **Volume 1 Issue 1 (June 2023)**: 12 research papers with direct PDF download links.
+  - Interactive **real-time search bar & issue switcher** (switch between All Issues, Vol 1 No 2, and Vol 1 No 1).
+  - Discipline filter pills (Extension, Soils/Crops, Livestock, Climate, Fisheries).
+  - One-click APA 7th edition citation copier.
 - **Editorial Board**: Full advisory council, Editor-in-Chief (Assoc. Prof. Bashir Garba Muktar), Deputy Editors, and international/national editors.
-- **Author Guidelines & Banking**: Explicit formatting guidelines, APA 7th referencing examples, handling fee (\(\text{₦}5,000\)), publication fee (\(\text{₦}20,000\)), and GTBank details (`0835783652`).
+- **Author Guidelines & Banking**: Explicit formatting guidelines, APA 7th referencing examples, handling fee (₦5,000 / $25), publication fee (₦20,000), and GTBank details (`0835783652`).
 - **Interactive Submission**: Online intake form generating structured submission packets sent to `josaecares@fud.edu.ng` and `cares.fudng@gmail.com`.

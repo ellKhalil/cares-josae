@@ -5,13 +5,15 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Article Live Filter & Search
+  // 1. Article Live Filter & Search Engine
   const searchInput = document.getElementById('journalSearchInput');
   const categoryFilters = document.querySelectorAll('.category-filter-btn');
+  const issueFilters = document.querySelectorAll('.issue-filter-btn');
   const articleCards = document.querySelectorAll('.article-item');
   const resultsCount = document.getElementById('searchResultsCount');
 
   let currentCategory = 'all';
+  let currentIssue = 'all';
   let currentSearchQuery = '';
 
   function filterArticles() {
@@ -20,11 +22,13 @@ document.addEventListener('DOMContentLoaded', () => {
     articleCards.forEach(card => {
       const text = card.textContent.toLowerCase();
       const category = card.getAttribute('data-category') || 'all';
+      const issue = card.getAttribute('data-issue') || 'all';
 
       const matchesQuery = currentSearchQuery === '' || text.includes(currentSearchQuery);
       const matchesCategory = currentCategory === 'all' || category === currentCategory;
+      const matchesIssue = currentIssue === 'all' || issue === currentIssue;
 
-      if (matchesQuery && matchesCategory) {
+      if (matchesQuery && matchesCategory && matchesIssue) {
         card.style.display = 'block';
         visibleCount++;
       } else {
@@ -48,13 +52,33 @@ document.addEventListener('DOMContentLoaded', () => {
     categoryFilters.forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();
-        categoryFilters.forEach(b => b.classList.remove('active', 'btn-primary-fud'));
-        categoryFilters.forEach(b => b.classList.add('btn-outline-fud'));
+        categoryFilters.forEach(b => {
+          b.classList.remove('active', 'btn-primary-fud');
+          b.classList.add('btn-outline-fud');
+        });
 
         btn.classList.remove('btn-outline-fud');
         btn.classList.add('active', 'btn-primary-fud');
 
         currentCategory = btn.getAttribute('data-filter') || 'all';
+        filterArticles();
+      });
+    });
+  }
+
+  if (issueFilters.length > 0) {
+    issueFilters.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        issueFilters.forEach(b => {
+          b.classList.remove('active', 'btn-success');
+          b.classList.add('btn-outline-secondary');
+        });
+
+        btn.classList.remove('btn-outline-secondary');
+        btn.classList.add('active', 'btn-success');
+
+        currentIssue = btn.getAttribute('data-issue-filter') || 'all';
         filterArticles();
       });
     });

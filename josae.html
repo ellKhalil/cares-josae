@@ -57,7 +57,7 @@
       <div class="collapse navbar-collapse" id="navbarJosae">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
           <li class="nav-item">
-            <a class="nav-link active" href="josae.html">Current Issue</a>
+            <a class="nav-link active" href="josae.html">Current Issues</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="josae-archives.html">Archives &amp; Issues</a>
@@ -99,7 +99,7 @@
           </p>
           <div class="d-flex flex-wrap gap-2">
             <a href="#articlesSection" class="btn btn-warning fw-bold">
-              <i class="bi bi-book me-1"></i> Browse Vol. 1 No. 1 Articles
+              <i class="bi bi-book me-1"></i> Browse Published Articles
             </a>
             <a href="josae-guidelines.html" class="btn btn-outline-light">
               <i class="bi bi-pencil-square me-1"></i> Author Guidelines &amp; Fees
@@ -112,13 +112,12 @@
         <div class="col-lg-4 text-center">
           <div class="card bg-white text-dark border-0 shadow-lg rounded-4 p-4 text-start">
             <div class="badge bg-success mb-2">Latest Publication</div>
-            <h5 class="fw-bold text-success mb-1">Vol. 1 No. 1 (June 2023)</h5>
-            <p class="small text-muted mb-3">Published: June 2023 | 12 Research Articles</p>
-            <ul class="list-unstyled small text-secondary mb-3">
-              <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-1"></i> Full Preliminary Volume Available</li>
-              <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-1"></i> Free Open Access Download</li>
-              <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-1"></i> English Language</li>
-            </ul>
+            <h5 class="fw-bold text-success mb-1">Vol. 1 No. 2 (Dec 2023)</h5>
+            <p class="small text-muted mb-2">Published: Dec 2023 &bull; 12 Research Articles</p>
+            <hr class="my-2">
+            <div class="badge bg-secondary mb-1">Maiden Edition</div>
+            <h6 class="fw-bold text-dark mb-1">Vol. 1 No. 1 (June 2023)</h6>
+            <p class="small text-muted mb-3">Published: June 2023 &bull; 12 Research Articles (Full PDFs Available)</p>
             <a href="#articlesSection" class="btn btn-primary-fud btn-sm w-100">
               <i class="bi bi-arrow-down-circle me-1"></i> Jump to Table of Contents
             </a>
@@ -156,387 +155,797 @@
         <div class="col-lg-8">
           <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
             <div>
-              <h3 class="fw-bold mb-0 text-success">Table of Contents</h3>
-              <span class="text-muted small">Vol. 1 No. 1, June 2023 &bull; Federal University Dutse</span>
+              <h3 class="fw-bold mb-0 text-success">Table of Contents &amp; Articles</h3>
+              <span class="text-muted small">Volume 1 (Issues 1 &amp; 2) &bull; Federal University Dutse</span>
             </div>
-            <span class="badge bg-success px-3 py-2" id="searchResultsCount">Showing 12 of 12 articles</span>
+            <span class="badge bg-success px-3 py-2" id="searchResultsCount">Showing 24 of 24 articles</span>
           </div>
 
-          <!-- Interactive Search & Discipline Filter Box -->
+          <!-- Interactive Search & Issue Filter Box -->
           <div class="search-journal-box mb-4">
+            <!-- Issue Switcher Tabs -->
+            <div class="d-flex flex-wrap gap-2 mb-3 pb-2 border-bottom">
+              <span class="small fw-bold text-dark align-self-center me-2"><i class="bi bi-journals me-1"></i> Filter by Issue:</span>
+              <button class="btn btn-sm btn-success issue-filter-btn active" data-issue-filter="all">All Issues (24)</button>
+              <button class="btn btn-sm btn-outline-secondary issue-filter-btn" data-issue-filter="vol1no2"><i class="bi bi-star-fill text-warning me-1"></i>Vol. 1 No. 2 (Dec 2023)</button>
+              <button class="btn btn-sm btn-outline-secondary issue-filter-btn" data-issue-filter="vol1no1">Vol. 1 No. 1 (June 2023)</button>
+            </div>
+
+            <!-- Search input -->
             <div class="input-group mb-3">
               <span class="input-group-text bg-white border-end-0 text-muted"><i class="bi bi-search"></i></span>
-              <input type="text" id="journalSearchInput" class="form-control border-start-0" placeholder="Search by paper title, author name, or topic (e.g. maize, cassava, climate, urea, ICT)...">
+              <input type="text" id="journalSearchInput" class="form-control border-start-0" placeholder="Search by paper title, author name, or topic (e.g. groundnut, heteroclarias, maize, tomato, credit, kalgo)...">
             </div>
+
+            <!-- Discipline Filters -->
             <div class="d-flex flex-wrap gap-2 align-items-center">
-              <span class="small fw-bold text-muted me-1">Filter by Discipline:</span>
+              <span class="small fw-bold text-muted me-1">Discipline:</span>
               <button class="btn btn-sm btn-primary-fud category-filter-btn active" data-filter="all">All Disciplines</button>
               <button class="btn btn-sm btn-outline-fud category-filter-btn" data-filter="extension">Extension &amp; Economics</button>
               <button class="btn btn-sm btn-outline-fud category-filter-btn" data-filter="crops-soils">Crops &amp; Soils</button>
               <button class="btn btn-sm btn-outline-fud category-filter-btn" data-filter="livestock">Animal Science</button>
               <button class="btn btn-sm btn-outline-fud category-filter-btn" data-filter="climate">Climate &amp; Tech</button>
+              <button class="btn btn-sm btn-outline-fud category-filter-btn" data-filter="fisheries">Fisheries</button>
             </div>
           </div>
 
-          <!-- ARTICLE 1 -->
-          <div class="article-card article-item" data-category="extension">
+          <!-- ARTICLES LIST -->
+
+          <!-- ARTICLE VOL 1 NO 2 - ART 1 -->
+          <div class="article-card article-item" data-category="livestock" data-issue="vol1no2">
             <div class="article-meta">
+              <span class="badge bg-warning text-dark me-1"><i class="bi bi-star-fill me-1"></i>Vol. 1 No. 2 (Dec 2023)</span>
+              <span class="article-badge">Animal Science &amp; Reproduction</span>
+              <span><i class="bi bi-calendar3 me-1"></i> December 2023</span>
+              <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
+            </div>
+            <h4 class="article-title">
+              <a href="#art-v2-1">ASSESSMENT OF TRAINING NEEDS AMONG SMALLHOLDER FARMERS IN NINGI LOCAL GOVERNMENT AREA OF BAUCHI STATE NIGERIA</a>
+            </h4>
+            <div class="article-authors">
+              <i class="bi bi-person-fill text-muted me-1"></i> <strong>*1Abdullahi, M., 1Salisu, A.H., 1Idris, H., and 1Abdullahi, B.I.</strong>
+            </div>
+            <div class="article-actions">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-v2-1" aria-expanded="false">
+                <i class="bi bi-chevron-down me-1"></i> View Abstract
+              </button>
+              <a href="assets/docs/vol1-issue2/josae-vol1-no2-art01-abdullahi.doc" download class="btn btn-primary-fud btn-sm">
+                <i class="bi bi-file-earmark-word-fill me-1"></i> Download Manuscript (82.0 KB)
+              </a>
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="*1Abdullahi, M., 1Salisu, A.H., 1Idris, H., and 1Abdullahi, B.I. (2023). ASSESSMENT OF TRAINING NEEDS AMONG SMALLHOLDER FARMERS IN NINGI LOCAL GOVERNMENT AREA OF BAUCHI STATE NIGERIA. Journal of Smart Agriculture and Extension Services (JOSAE), 1(2).">
+                <i class="bi bi-quote me-1"></i> Cite
+              </button>
+            </div>
+            <div class="collapse abstract-collapse" id="abstract-v2-1">
+              <strong>Abstract:</strong> The study assessed agricultural extension training programs among smallholder farmers in Ningi local government area, Bauchi State, Nigeria. A multi-stage sampling technique was used in selecting 120 respondents for the study. Data were collected with aid of structured questionnaire and analyzed using both descriptive and inferential statistics. The result reveals that, majority of the respondents (71.1%) were male with (35.8%) of the respondent fell between 46-55 years and (30.8%) had never been to school. The result also shows that almost half of the famers (49.2%) owned about 2- 4 ha. with majority of them (73.5%) had household size ranges from 1-18. The result of the t-test shows that more men attended extension training as compared to women, however on the issue of farmers attendance at extension training in relation to gender there was no significance difference between males and females at (P&lt;0.05) level. The result of the analysis of variances also, indicated that there were no significance differences between different levels of education and the farmers’ perception of extension service in the study area. The result of the logistic regression analysis shows that the training need of farmers were significantly (P&lt;0.05) influenced by marital status, farming experience, and number of attendances to extension training. Major constraints were improper planning of extension training programs, poor transportation network and lack of motivation. The study recommends that extension agents should have a known schedule for training so as to help farmers allocate time for such training.
+            </div>
+          </div>
+
+
+          <!-- ARTICLE VOL 1 NO 2 - ART 2 -->
+          <div class="article-card article-item" data-category="crops-soils" data-issue="vol1no2">
+            <div class="article-meta">
+              <span class="badge bg-warning text-dark me-1"><i class="bi bi-star-fill me-1"></i>Vol. 1 No. 2 (Dec 2023)</span>
+              <span class="article-badge">Soil Microbiology &amp; Land Use</span>
+              <span><i class="bi bi-calendar3 me-1"></i> December 2023</span>
+              <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
+            </div>
+            <h4 class="article-title">
+              <a href="#art-v2-2">Estimation of Crop Water Requirement for Different Crops at Dambatta Thomas Dam Command Area, Kano State, Nigeria</a>
+            </h4>
+            <div class="article-authors">
+              <i class="bi bi-person-fill text-muted me-1"></i> <strong>1I.A Adam and 2Abdulazeez Hudu Wudil</strong>
+            </div>
+            <div class="article-actions">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-v2-2" aria-expanded="false">
+                <i class="bi bi-chevron-down me-1"></i> View Abstract
+              </button>
+              <a href="assets/docs/vol1-issue2/josae-vol1-no2-art02-adam.doc" download class="btn btn-primary-fud btn-sm">
+                <i class="bi bi-file-earmark-word-fill me-1"></i> Download Manuscript (539.0 KB)
+              </a>
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="1I.A Adam and 2Abdulazeez Hudu Wudil (2023). Estimation of Crop Water Requirement for Different Crops at Dambatta Thomas Dam Command Area, Kano State, Nigeria. Journal of Smart Agriculture and Extension Services (JOSAE), 1(2).">
+                <i class="bi bi-quote me-1"></i> Cite
+              </button>
+            </div>
+            <div class="collapse abstract-collapse" id="abstract-v2-2">
+              <strong>Abstract:</strong> Accurate estimation of crop water requirements (ETc) of any crop is essentially required for irrigation scheduling and water management. This work evaluated the water requirement of four irrigated crops (Groundnut, Maize, Onion and Tomato) using Hargreaves Equation and FAO-56 guidelines to compute the reference and potential evapotranspiration of the crops respectively. The crop water requirements estimated were compared with the water applied and the actual duration of crops in the field as per the practices followed by the farmers. The results showed that the crops water requirements for groundnut, maize, onion and tomato based on FAO-56 guideline are 602mm, 715mm, 1029mm, and 661mm, while the average water applied are 559mm, 577mm, 819mm, and 557mm respectively. The crops were also found to be harvested far earlier than recommended by FAO-56 guideline
+            </div>
+          </div>
+
+
+          <!-- ARTICLE VOL 1 NO 2 - ART 3 -->
+          <div class="article-card article-item" data-category="livestock" data-issue="vol1no2">
+            <div class="article-meta">
+              <span class="badge bg-warning text-dark me-1"><i class="bi bi-star-fill me-1"></i>Vol. 1 No. 2 (Dec 2023)</span>
+              <span class="article-badge">Ruminant Nutrition &amp; Forage</span>
+              <span><i class="bi bi-calendar3 me-1"></i> December 2023</span>
+              <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
+            </div>
+            <h4 class="article-title">
+              <a href="#art-v2-3">Effects of Feeding Complete Diets of Piliostigma thoningii (Kalgo) Leaves on Performance and Digestibility of Kano Brown Bucks in Semi-arid zone of Nigeria.</a>
+            </h4>
+            <div class="article-authors">
+              <i class="bi bi-person-fill text-muted me-1"></i> <strong>*1Ashiru, R. M., 2Iliyasu, K. A., 3Madu, A., 4Sariyyu, S.,  5Afolabi, H.O., 6Babandi, B., 6Ubayi, K. M., 7Ado, F. H. and 1Ibrahim, B. M.</strong>
+            </div>
+            <div class="article-actions">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-v2-3" aria-expanded="false">
+                <i class="bi bi-chevron-down me-1"></i> View Abstract
+              </button>
+              <a href="assets/docs/vol1-issue2/josae-vol1-no2-art03-ashiru.doc" download class="btn btn-primary-fud btn-sm">
+                <i class="bi bi-file-earmark-word-fill me-1"></i> Download Manuscript (68.5 KB)
+              </a>
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="*1Ashiru, R. M., 2Iliyasu, K. A., 3Madu, A., 4Sariyyu, S.,  5Afolabi, H.O., 6Babandi, B., 6Ubayi, K. M., 7Ado, F. H. and 1Ibrahim, B. M. (2023). Effects of Feeding Complete Diets of Piliostigma thoningii (Kalgo) Leaves on Performance and Digestibility of Kano Brown Bucks in Semi-arid zone of Nigeria.. Journal of Smart Agriculture and Extension Services (JOSAE), 1(2).">
+                <i class="bi bi-quote me-1"></i> Cite
+              </button>
+            </div>
+            <div class="collapse abstract-collapse" id="abstract-v2-3">
+              <strong>Abstract:</strong> The study was conducted to determine the effects of feeding complete diet of Piliostigma thoningii leaves on growth performance and Digestibility of Kano Brown bucks in semi-arid zone of Nigeria in a randomized complete block design (RCBD) experiment. Sixteen Kano Brown bucks were used in the experiment and are divided into four treatment groups of four animals per treatment viz; T1 (0%) as control, T2 (15%), T3 (30%) and T4 (45%) inclusion levels of Piliostigma thoningii leaves. They were fed the diets ad-libitum. The feeding trial lasted for 12 weeks (84 days). Parameters measured and calculated include weight gain, feed intake, ADG, feed efficiency and growth rate as well as nutrient Digestibility.. The results of growth performance showed that, there were no significant difference (P&gt;0.05) in all the parameters evaluated but values obtained in T3 were numerically higher. The results of digestibility showed significant (P&lt;0.05) differences in all the parameters evaluated except ash digestibility. It is concluded that Piliostigma thoningii leaves could be included in complete diets up to 30% for Kano Brown bucks. It is therefore, recommended that 30% of Piliostigma thoningii could be included in complete ration for Kano Brown bucks.
+            </div>
+          </div>
+
+
+          <!-- ARTICLE VOL 1 NO 2 - ART 4 -->
+          <div class="article-card article-item" data-category="extension" data-issue="vol1no2">
+            <div class="article-meta">
+              <span class="badge bg-warning text-dark me-1"><i class="bi bi-star-fill me-1"></i>Vol. 1 No. 2 (Dec 2023)</span>
+              <span class="article-badge">Agricultural Finance &amp; Credit</span>
+              <span><i class="bi bi-calendar3 me-1"></i> December 2023</span>
+              <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
+            </div>
+            <h4 class="article-title">
+              <a href="#art-v2-4">EFFECT OF BREEDS, SEX AND AGE ON FETAL PARAMETERS OF SLAUGHTERED PREGNANT COWS</a>
+            </h4>
+            <div class="article-authors">
+              <i class="bi bi-person-fill text-muted me-1"></i> <strong>1Bature, N., 2Abdussamad, A. M., 2Ogah, D. M., 1Babangida, L., and 1Gumel, I. A</strong>
+            </div>
+            <div class="article-actions">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-v2-4" aria-expanded="false">
+                <i class="bi bi-chevron-down me-1"></i> View Abstract
+              </button>
+              <a href="assets/docs/vol1-issue2/josae-vol1-no2-art04-bature.doc" download class="btn btn-primary-fud btn-sm">
+                <i class="bi bi-file-earmark-word-fill me-1"></i> Download Manuscript (73.0 KB)
+              </a>
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="1Bature, N., 2Abdussamad, A. M., 2Ogah, D. M., 1Babangida, L., and 1Gumel, I. A (2023). EFFECT OF BREEDS, SEX AND AGE ON FETAL PARAMETERS OF SLAUGHTERED PREGNANT COWS. Journal of Smart Agriculture and Extension Services (JOSAE), 1(2).">
+                <i class="bi bi-quote me-1"></i> Cite
+              </button>
+            </div>
+            <div class="collapse abstract-collapse" id="abstract-v2-4">
+              <strong>Abstract:</strong> The study was conducted to determine the effect of Breed, sex and age on fetal parameters on pregnant cows slaughtered at kano main abattoir, Kano state. The breed included red bororo, white Fulani and adamawa gudali. The cow aged 4-7 years old. The data used for the study included 85 red bororo, 85 white Fulani and 31 adamawa gudali. The animals were aged by dentition, weighed using a weighing band or tape and weighing scale. Fetal parameters measured included TBL, CVRL, CC, RADIUS, TIBIA, UCL and FETAL AGE. The experiment was conducted in a cross-sectional design. Data were analyzed using statistical package for social sciences, SPSS Version 16.0. Result also showed  no significant (P&lt;0.05) differences on fetal parameters TBL, CVRL, CC, RADIUS, TIBIA and UCL, Adamawa Guadali recorded the highest means (91.56±3.56cm, 68.68±3.23cm, 56.96±2.78cm, 20.51±1.00cm and 37.54±1.22cm respectively) and the lowest means was observed in white Fulani (71.46±2.46cm, 52.30±2.06cm, 42.68±1.75cm, 12.70±0.59cm, 16.46±0.63cm and 33.36±0.78cm respectively). Highest means observed in 7 and 4years and the least was observed in 5years.
+            </div>
+          </div>
+
+
+          <!-- ARTICLE VOL 1 NO 2 - ART 5 -->
+          <div class="article-card article-item" data-category="climate" data-issue="vol1no2">
+            <div class="article-meta">
+              <span class="badge bg-warning text-dark me-1"><i class="bi bi-star-fill me-1"></i>Vol. 1 No. 2 (Dec 2023)</span>
+              <span class="article-badge">Climate-Smart Education</span>
+              <span><i class="bi bi-calendar3 me-1"></i> December 2023</span>
+              <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
+            </div>
+            <h4 class="article-title">
+              <a href="#art-v2-5">EFFECT OF GRADED LEVELS OF DIETARY MORINGA OLEIFERA LEAF MEAL ON GROWTH PERFORMANCE AND CARCASS CHARACTERISTICS OF JAPANESE QUAILS</a>
+            </h4>
+            <div class="article-authors">
+              <i class="bi bi-person-fill text-muted me-1"></i> <strong>1Igbosanu, A.O., and 1Otufale, G.A.</strong>
+            </div>
+            <div class="article-actions">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-v2-5" aria-expanded="false">
+                <i class="bi bi-chevron-down me-1"></i> View Abstract
+              </button>
+              <a href="assets/docs/vol1-issue2/josae-vol1-no2-art05-igbosanu.doc" download class="btn btn-primary-fud btn-sm">
+                <i class="bi bi-file-earmark-word-fill me-1"></i> Download Manuscript (83.5 KB)
+              </a>
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="1Igbosanu, A.O., and 1Otufale, G.A. (2023). EFFECT OF GRADED LEVELS OF DIETARY MORINGA OLEIFERA LEAF MEAL ON GROWTH PERFORMANCE AND CARCASS CHARACTERISTICS OF JAPANESE QUAILS. Journal of Smart Agriculture and Extension Services (JOSAE), 1(2).">
+                <i class="bi bi-quote me-1"></i> Cite
+              </button>
+            </div>
+            <div class="collapse abstract-collapse" id="abstract-v2-5">
+              <strong>Abstract:</strong> This experiment was conducted to investigate the effect of graded levels of dietary Moringa oleifera leaf meal on the growth performance and carcass yield characteristics of Japanese quails. Forty eight (48) two-week old Japanese quail chicks were used for the experiment. Birds were allotted to four dietary treatments of twelve quails each which were further replicated twice in a completely randomized design. Four experimental diets were formulated such that diet 1 which served as the control contained no Moringa oleifera leaf meal. Diets 2, 3 and 4 contained 4%, 8% and 12% Moringa oleifera leaf meal. The experimental diets and portable water were supplied ad-libitum throughout the experimental period of 35 days. The dietary treatments were iso-nitrogenous. Results showed that treatment effects on average weight gain, feed conversion ratio, plucked weight, eviscerated weight, dressed weight, head weight, shank weight, gizzard with lining and without lining weights and heart weight were not significant (P &gt; 0.05), while the mean weekly feed intake and live weight of experimental birds were significantly (P &lt; 0.05) enhanced by the control diet and significantly lowered by Moringa oleifera leaf meal inclusion. The Neck weights of the experimental birds were significantly enhanced at 4% level of Moringa oleifera leaf meal supplementation which was similar to the control. Dietary supplementation of Moringa oleifera leaf meal at 4% level compared favourably with the control diet hence, Moringa oleifera leaf meal can be supplemented in the diets of Japanese quails at 4% level for optimal performance and carcass yield.
+            </div>
+          </div>
+
+
+          <!-- ARTICLE VOL 1 NO 2 - ART 6 -->
+          <div class="article-card article-item" data-category="crops-soils" data-issue="vol1no2">
+            <div class="article-meta">
+              <span class="badge bg-warning text-dark me-1"><i class="bi bi-star-fill me-1"></i>Vol. 1 No. 2 (Dec 2023)</span>
+              <span class="article-badge">Rice Agronomy &amp; Extension</span>
+              <span><i class="bi bi-calendar3 me-1"></i> December 2023</span>
+              <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
+            </div>
+            <h4 class="article-title">
+              <a href="#art-v2-6">AN ASSESSMENT OF TECHNICAL EFFICIENCY ON RICE FARMERS IN ZAMFARA STATE, NIGERIA: A DATA ENVELOPMENT ANALYSIS APPRAOCH</a>
+            </h4>
+            <div class="article-authors">
+              <i class="bi bi-person-fill text-muted me-1"></i> <strong>1Jatto, A.N., 2Lawal, A.D., 2Isa, A.E., 2Abubakar, M. and 3Abdullahi, M.</strong>
+            </div>
+            <div class="article-actions">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-v2-6" aria-expanded="false">
+                <i class="bi bi-chevron-down me-1"></i> View Abstract
+              </button>
+              <a href="assets/docs/vol1-issue2/josae-vol1-no2-art06-jatto.doc" download class="btn btn-primary-fud btn-sm">
+                <i class="bi bi-file-earmark-word-fill me-1"></i> Download Manuscript (154.5 KB)
+              </a>
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="1Jatto, A.N., 2Lawal, A.D., 2Isa, A.E., 2Abubakar, M. and 3Abdullahi, M. (2023). AN ASSESSMENT OF TECHNICAL EFFICIENCY ON RICE FARMERS IN ZAMFARA STATE, NIGERIA: A DATA ENVELOPMENT ANALYSIS APPRAOCH. Journal of Smart Agriculture and Extension Services (JOSAE), 1(2).">
+                <i class="bi bi-quote me-1"></i> Cite
+              </button>
+            </div>
+            <div class="collapse abstract-collapse" id="abstract-v2-6">
+              <strong>Abstract:</strong> This study assesses the technical efficiency level of rice farmers in Zamfara state using the Data envelopment analysis approach. A Yamane formula was used to determine the sample size and a simple random selection of 134 rice farmers were selected for the study. Primary data used were collected with the use of a structured questionnaire from the selected rice farmers. The result of the technical efficiency showed that the rice farmers have efficiency mean score of 73% and the mean input slack of land, labour, seeds, and fertilizer usage are 0.071, 0.408, 1.767 and 21.205 respectively. Implying that inputs could be decreased by those units and still produce the same level of output. The study concluded that the rice farmers are quite efficient in input usage. It was recommended that additional unit of land can be used to address the underutilization of the fertilizer usage.
+            </div>
+          </div>
+
+
+          <!-- ARTICLE VOL 1 NO 2 - ART 7 -->
+          <div class="article-card article-item" data-category="extension" data-issue="vol1no2">
+            <div class="article-meta">
+              <span class="badge bg-warning text-dark me-1"><i class="bi bi-star-fill me-1"></i>Vol. 1 No. 2 (Dec 2023)</span>
+              <span class="article-badge">Horticulture &amp; Production Economics</span>
+              <span><i class="bi bi-calendar3 me-1"></i> December 2023</span>
+              <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
+            </div>
+            <h4 class="article-title">
+              <a href="#art-v2-7">ESTIMATE OF RICE GRAIN QUALITY AND CONSUMERS’ PREFERENCE FOR LOCAL AND FOREIGN ATTRIBUTES IN MINNA, NIGER STATE, NIGERIA</a>
+            </h4>
+            <div class="article-authors">
+              <i class="bi bi-person-fill text-muted me-1"></i> <strong>Lawal A.T.1, James, D2, .Mustapha, A.L3, Agbaje, A.O3, Gaya, A.Y1, Umar, J4 ,and Abdullahi, M.B5,</strong>
+            </div>
+            <div class="article-actions">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-v2-7" aria-expanded="false">
+                <i class="bi bi-chevron-down me-1"></i> View Abstract
+              </button>
+              <a href="assets/docs/vol1-issue2/josae-vol1-no2-art07-lawal.doc" download class="btn btn-primary-fud btn-sm">
+                <i class="bi bi-file-earmark-word-fill me-1"></i> Download Manuscript (212.0 KB)
+              </a>
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Lawal A.T.1, James, D2, .Mustapha, A.L3, Agbaje, A.O3, Gaya, A.Y1, Umar, J4 ,and Abdullahi, M.B5, (2023). ESTIMATE OF RICE GRAIN QUALITY AND CONSUMERS’ PREFERENCE FOR LOCAL AND FOREIGN ATTRIBUTES IN MINNA, NIGER STATE, NIGERIA. Journal of Smart Agriculture and Extension Services (JOSAE), 1(2).">
+                <i class="bi bi-quote me-1"></i> Cite
+              </button>
+            </div>
+            <div class="collapse abstract-collapse" id="abstract-v2-7">
+              <strong>Abstract:</strong> The study estimated rice grain quality and consumer preference in Niger State, Nigeria. Data were collected from 114 rice consumers across markets within the state. The study used multinomial logistic, hedonic price model and garret ranking techniques to measure individual’s’ preference structure via systematic variation of rice attributes.  The average age of the respondents is 42 years, household-size of 6 persons and monthly income of N77, 059. The high variability of income implies a wider variation in purchasing power of households and subsequently, the households demand for food. It revealed that on category of local rice the coefficient of education is statistically significant at P&lt; 0.01 and has a negative effect on the consumer preference for local rice. Result indicates various factors customers consider when purchasing rice. The result shows that method of package and low breakage were found to be statistically significant with a positive coefficient at P&lt;0.01 and P&lt;0.010. Also rice colour (white) and impurities attributes were found to be statistically significant with a negative coefficient. Also rice impurities were the highest ranked constraint by consumers (3.42), followed by high cost of local rice (3.90) while inferior taste and poor cohesion was ranked least (6.04 and 6.84). It was concluded that private sector should invest in modern processing facilities for local rice as this would place the commodity in a better position when compared with imported rice.
+            </div>
+          </div>
+
+
+          <!-- ARTICLE VOL 1 NO 2 - ART 8 -->
+          <div class="article-card article-item" data-category="climate" data-issue="vol1no2">
+            <div class="article-meta">
+              <span class="badge bg-warning text-dark me-1"><i class="bi bi-star-fill me-1"></i>Vol. 1 No. 2 (Dec 2023)</span>
+              <span class="article-badge">Climate Awareness &amp; Perception</span>
+              <span><i class="bi bi-calendar3 me-1"></i> December 2023</span>
+              <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
+            </div>
+            <h4 class="article-title">
+              <a href="#art-v2-8">ASSESSMENT OF KNOWLEDGE AND ATTITUDE OF AGRICULTURAL EDUCATION STUDENTS’ ON CLIMATE CHANGE IN TAI SOLARIN COLLEGE OF EDUCATION, OMU-IJEBU, OGUN STATE, NIGERIA.</a>
+            </h4>
+            <div class="article-authors">
+              <i class="bi bi-person-fill text-muted me-1"></i> <strong>1 Otufale G.A., and 1Igbosanu A.O.,</strong>
+            </div>
+            <div class="article-actions">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-v2-8" aria-expanded="false">
+                <i class="bi bi-chevron-down me-1"></i> View Abstract
+              </button>
+              <a href="assets/docs/vol1-issue2/josae-vol1-no2-art08-otufale.doc" download class="btn btn-primary-fud btn-sm">
+                <i class="bi bi-file-earmark-word-fill me-1"></i> Download Manuscript (227.0 KB)
+              </a>
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="1 Otufale G.A., and 1Igbosanu A.O., (2023). ASSESSMENT OF KNOWLEDGE AND ATTITUDE OF AGRICULTURAL EDUCATION STUDENTS’ ON CLIMATE CHANGE IN TAI SOLARIN COLLEGE OF EDUCATION, OMU-IJEBU, OGUN STATE, NIGERIA.. Journal of Smart Agriculture and Extension Services (JOSAE), 1(2).">
+                <i class="bi bi-quote me-1"></i> Cite
+              </button>
+            </div>
+            <div class="collapse abstract-collapse" id="abstract-v2-8">
+              <strong>Abstract:</strong> The study examined the knowledge and attitude of agricultural education towards climate change. Data were collected from 48 agricultural education students purposively selected across different levels.  Data were analyzed using both descriptive and inferential statistics such as frequency, percentages and Pearson Product Moment correlation coefficient (PPMC). Majority were male (52.1%) and within the age range of 20-25 years (66.7%). The result of Agricultural students’ knowledge on climate change shows that (43.8%) of the respondents did not consented that agricultural activities such as crop and livestock production contribute to climate change. Slightly about average (47.3%) agreed that, there was collective action the effects of climate change could be reduced. There was no significant relationship between socio-economic characteristics of respondents and their knowledge of climate change; age (r=.241), sex (r=- 0.54), tribe (r=.110), level of study (r=.268), religion (.221, P&gt;0.05) and marital-status (.071). However, there was significant relationship between the level of study of the respondents and their attitude towards climate change (r = .330*, P &lt; 0.05). Based on the results of the study, it was concluded that respondents’ socio-economic characteristics had no significant relationship with their attitudes and knowledge of climate change except their levels of study. It was recommended that courses on climate change should be introduced at various levels of study in N.C.E curriculum.
+            </div>
+          </div>
+
+
+          <!-- ARTICLE VOL 1 NO 2 - ART 9 -->
+          <div class="article-card article-item" data-category="crops-soils" data-issue="vol1no2">
+            <div class="article-meta">
+              <span class="badge bg-warning text-dark me-1"><i class="bi bi-star-fill me-1"></i>Vol. 1 No. 2 (Dec 2023)</span>
+              <span class="article-badge">Legume Agronomy &amp; Organic Nutrition</span>
+              <span><i class="bi bi-calendar3 me-1"></i> December 2023</span>
+              <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
+            </div>
+            <h4 class="article-title">
+              <a href="#art-v2-9">Genotypic Evaluation of Groundnut (arachis hypogeae L.) Yield-related Traits in Response to Foliar Application of Liquid Organic Fertilizer</a>
+            </h4>
+            <div class="article-authors">
+              <i class="bi bi-person-fill text-muted me-1"></i> <strong>1Amira Musa SA’AD, 2*Shamsu Ado ZAKARI, 1Umar ADAMU, and 3Ali Ibrahim SALE</strong>
+            </div>
+            <div class="article-actions">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-v2-9" aria-expanded="false">
+                <i class="bi bi-chevron-down me-1"></i> View Abstract
+              </button>
+              <a href="assets/docs/vol1-issue2/josae-vol1-no2-art09-shamsu.doc" download class="btn btn-primary-fud btn-sm">
+                <i class="bi bi-file-earmark-word-fill me-1"></i> Download Manuscript (156.0 KB)
+              </a>
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="1Amira Musa SA’AD, 2*Shamsu Ado ZAKARI, 1Umar ADAMU, and 3Ali Ibrahim SALE (2023). Genotypic Evaluation of Groundnut (arachis hypogeae L.) Yield-related Traits in Response to Foliar Application of Liquid Organic Fertilizer. Journal of Smart Agriculture and Extension Services (JOSAE), 1(2).">
+                <i class="bi bi-quote me-1"></i> Cite
+              </button>
+            </div>
+            <div class="collapse abstract-collapse" id="abstract-v2-9">
+              <strong>Abstract:</strong> Indiscriminate use of chemical fertilizers has degraded soil quality and reduced groundnut production by depleting nutrients, disrupting microbial balance, and causing soil acidification. Understanding how organic alternatives can enhance growth and yield, reduce chemical fertilizer dependence, and promote sustainable farming is therefore essential.. This study examined the effects of liquid organic fertilizer (LOF) on the growth and yield of two groundnut varieties, SAMNUT24 and SAMNUT25, using four LOF concentrations: 4.7 ml, 6.5 ml, 8.28 ml, and a control (0 ml). The results indicate that LOF and variety significantly influenced leaf number, with SAMNUT25 showing the highest leaf number at 8.28 ml in 2018 and 2019, while SAMNUT24 peaked at 4.7 ml. Both varieties exhibited increased branch number and leaf area with higher LOF concentrations. Total grain yield and yield components were significantly affected by LOF and variety, with the highest 100-seed weight observed at 8.28 ml for both varieties. Control treatments yielded the lowest seed weight. Total pod weight was highest at 8.28 ml for both varieties and decreased with lower LOF concentrations. Positive correlations were found between 100-seed weight, total pod weight, and total grain yield, with SAMNUT25 showing a stronger positive relationship to LOF than SAMNUT24. This study demonstrates that LOF significantly influences groundnut growth and yield, with varying responses among different varieties, providing valuable insights for agricultural practices.
+            </div>
+          </div>
+
+
+          <!-- ARTICLE VOL 1 NO 2 - ART 10 -->
+          <div class="article-card article-item" data-category="climate" data-issue="vol1no2">
+            <div class="article-meta">
+              <span class="badge bg-warning text-dark me-1"><i class="bi bi-star-fill me-1"></i>Vol. 1 No. 2 (Dec 2023)</span>
+              <span class="article-badge">Climate Econometrics &amp; Modeling</span>
+              <span><i class="bi bi-calendar3 me-1"></i> December 2023</span>
+              <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
+            </div>
+            <h4 class="article-title">
+              <a href="#art-v2-10">A CAUSALITY ANALYSIS OF CLIMATE CHANGE ON MAIZE PRODUCTION IN KATSINA STATE, NIGERIA.</a>
+            </h4>
+            <div class="article-authors">
+              <i class="bi bi-person-fill text-muted me-1"></i> <strong>Umar Sakinatu Garba1, Hussaini Yusuf Ibrahim2, Junaidu Musa3 and Bello Nasiru Abdullahi4</strong>
+            </div>
+            <div class="article-actions">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-v2-10" aria-expanded="false">
+                <i class="bi bi-chevron-down me-1"></i> View Abstract
+              </button>
+              <a href="assets/docs/vol1-issue2/josae-vol1-no2-art10-umar.doc" download class="btn btn-primary-fud btn-sm">
+                <i class="bi bi-file-earmark-word-fill me-1"></i> Download Manuscript (103.0 KB)
+              </a>
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Umar Sakinatu Garba1, Hussaini Yusuf Ibrahim2, Junaidu Musa3 and Bello Nasiru Abdullahi4 (2023). A CAUSALITY ANALYSIS OF CLIMATE CHANGE ON MAIZE PRODUCTION IN KATSINA STATE, NIGERIA.. Journal of Smart Agriculture and Extension Services (JOSAE), 1(2).">
+                <i class="bi bi-quote me-1"></i> Cite
+              </button>
+            </div>
+            <div class="collapse abstract-collapse" id="abstract-v2-10">
+              <strong>Abstract:</strong> The study examined the causality analysis of climate change on maize production in Katsina State. Time series data covering 1990 to 2020 was used. The analytical tools that were used include descriptive statistics, ARDL model, Toda-Yamamoto granger causality model, variance decomposition and impulse response function. The average values of maize yield (MPY), rainfall (RF), and temperature (TR) were 1.4%, 80.4%, and 26.7%, respectively. ARDL model result showed that there was no long-term relationship, but there was a short-term relationship between climate change and maize production. The outcome of short-run indicated that the model fits the data, with R-square and adjusted R-square values of 80% and 60%, respectively. The result suggests that the current(ΔRF) and first lag (ΔRF (-1)) of Rainfall have a positive impact (0.004824) and (0.003381) and are statistically insignificant at 5% and 1% levels in the short- run. The result implies that the coefficient result suggests that if RF increases by 1%, the MPY will increase in the short term by 0.005% in the short run. The result for Toda Yamamoto causality test showed that the null hypothesis (rainfall does not granger cause maize production and temperature does not granger cause maize production), can be accepted as their probability values (0.4619) and (0.4465) respectively, are greater than (1%, 5% and 10%). From the panel MPY graph, it can be seen that a 1% change in rainfall has a beneficial effect on maize output throughout the periods, however a 1% change in temperature only has a negative effect on maize production during period 2.  This outcome suggests that the rain had a beneficial effect on agricultural productivity.
+            </div>
+          </div>
+
+
+          <!-- ARTICLE VOL 1 NO 2 - ART 11 -->
+          <div class="article-card article-item" data-category="fisheries" data-issue="vol1no2">
+            <div class="article-meta">
+              <span class="badge bg-warning text-dark me-1"><i class="bi bi-star-fill me-1"></i>Vol. 1 No. 2 (Dec 2023)</span>
+              <span class="article-badge">Fisheries &amp; Aquaculture Economics</span>
+              <span><i class="bi bi-calendar3 me-1"></i> December 2023</span>
+              <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
+            </div>
+            <h4 class="article-title">
+              <a href="#art-v2-11">ECONOMIC VIABILITY OF FEEDING HETEROCLARIAS (HYBRID) FRY USING THREE DIFFERENT STARTER DIETS</a>
+            </h4>
+            <div class="article-authors">
+              <i class="bi bi-person-fill text-muted me-1"></i> <strong>1Yunusa, A., 1Buba, W., 2Onimmis, M.M., 2Yusuf, A., and 2Salifu, C.,</strong>
+            </div>
+            <div class="article-actions">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-v2-11" aria-expanded="false">
+                <i class="bi bi-chevron-down me-1"></i> View Abstract
+              </button>
+              <a href="assets/docs/vol1-issue2/josae-vol1-no2-art11-yunusa.doc" download class="btn btn-primary-fud btn-sm">
+                <i class="bi bi-file-earmark-word-fill me-1"></i> Download Manuscript (243.0 KB)
+              </a>
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="1Yunusa, A., 1Buba, W., 2Onimmis, M.M., 2Yusuf, A., and 2Salifu, C., (2023). ECONOMIC VIABILITY OF FEEDING HETEROCLARIAS (HYBRID) FRY USING THREE DIFFERENT STARTER DIETS. Journal of Smart Agriculture and Extension Services (JOSAE), 1(2).">
+                <i class="bi bi-quote me-1"></i> Cite
+              </button>
+            </div>
+            <div class="collapse abstract-collapse" id="abstract-v2-11">
+              <strong>Abstract:</strong> A comparative study on growth performance of Heteroclarias CG♀ × HL♂ (hybrid) using three different starter feeds was carried out at the teaching and research fish farm of the department of fisheries and aquaculture Prince Abubakar Audu University Anyigba. The three starter diets used are Gemma Wean (T1), Aller aqua (T2) and Coppens (T3). The results of the final mean weight gain of the different starter diets were 12.94g, 11.92g and 11.29g for treatment 1,2 and 3 respectively with significant difference at P&lt;0.05 Treatment one had the highest growth performance. The economic analysis of feeding the Heteroclarias fry with the different starter diets indicated that the gross profit (GP) 25,187.94; 28,001.90; 27,971.29. for treatment 1,2 and 3 respectively. The profit index also followed the same pattern with treatment one having (9.03) followed by (58.85) for treatment two and lastly (55.58) for treatment three. The benefit cost ratio (BCR) was more in treatment two (14.92) followed by treatment three (14.71) and lastly treatment one (6.22). The water quality parameter was closely monitored, and statistical analysis shows that there was no significant difference P&gt;0.05 in the results obtained from the water parameters. Although treatment 1 (Gemma wean) had the highest weight gain, (12.94g) treatment 2 which were the fry with Aller aqua is more economically viable, and is more profitable
+            </div>
+          </div>
+
+
+          <!-- ARTICLE VOL 1 NO 2 - ART 12 -->
+          <div class="article-card article-item" data-category="extension" data-issue="vol1no2">
+            <div class="article-meta">
+              <span class="badge bg-warning text-dark me-1"><i class="bi bi-star-fill me-1"></i>Vol. 1 No. 2 (Dec 2023)</span>
+              <span class="article-badge">Extension Administration &amp; Welfare</span>
+              <span><i class="bi bi-calendar3 me-1"></i> December 2023</span>
+              <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
+            </div>
+            <h4 class="article-title">
+              <a href="#art-v2-12">ASSESSMENT OF JOB SATISFACTION AMONG EXTENSION WORKERS’ IN AGRICULTURAL DEVELOPMENT PROGRAMME ZONES OF KATSINA STATE, NIGERIA</a>
+            </h4>
+            <div class="article-authors">
+              <i class="bi bi-person-fill text-muted me-1"></i> <strong>Yusuf, A.U.1 Mamman, M1. and Adejare T. G.1</strong>
+            </div>
+            <div class="article-actions">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-v2-12" aria-expanded="false">
+                <i class="bi bi-chevron-down me-1"></i> View Abstract
+              </button>
+              <a href="assets/docs/vol1-issue2/josae-vol1-no2-art12-yusuf.doc" download class="btn btn-primary-fud btn-sm">
+                <i class="bi bi-file-earmark-word-fill me-1"></i> Download Manuscript (492.5 KB)
+              </a>
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Yusuf, A.U.1 Mamman, M1. and Adejare T. G.1 (2023). ASSESSMENT OF JOB SATISFACTION AMONG EXTENSION WORKERS’ IN AGRICULTURAL DEVELOPMENT PROGRAMME ZONES OF KATSINA STATE, NIGERIA. Journal of Smart Agriculture and Extension Services (JOSAE), 1(2).">
+                <i class="bi bi-quote me-1"></i> Cite
+              </button>
+            </div>
+            <div class="collapse abstract-collapse" id="abstract-v2-12">
+              <strong>Abstract:</strong> The study assesses the job satisfaction among extension workers in agricultural development programme zones of Katsina State, Nigeria using multi-stage sampling techniques to select 75 agricultural extension workers across the three ADP zones of the state. Data were collected using structured questionnaires. The data collected were then analysed using descriptive statistics such as frequency counts, percentage and mean. Similarly, Pearson product moment correlation analysis was used for the inferential components. The findings showed that there was high level of job satisfaction among agricultural extension workers with their job content ( QUOTE  =3.82**) and organizational policies ( QUOTE  =3.60**), very high level of job satisfaction with their interpersonal relationship ( QUOTE  =4.88***) and moderate level of job satisfaction with their condition of service ( QUOTE  =3.15*) and working environment ( QUOTE  =2.88*). The grand mean score of 3.526** indicated that extension workers had an overall high level of job satisfaction. Three major factors; interpersonal relationship, organizational policies and staff condition of service were found to be strong predictors of job satisfaction. Thus, the study recommended that the Katsina state government should employ more extension staff, pay them good salary and involve them in decision making as well as planning of extension programmes for effective agricultural production. Also, regular promotion and payment of field allowances should be sustained through increased government budgetary allocation and funding of Agricultural Development Programmes.
+            </div>
+          </div>
+
+
+          <!-- ARTICLE VOL 1 NO 1 - ART 1 -->
+          <div class="article-card article-item" data-category="extension" data-issue="vol1no1">
+            <div class="article-meta">
+              <span class="badge bg-secondary me-1">Vol. 1 No. 1 (June 2023)</span>
               <span class="article-badge">Agricultural Extension &amp; Education</span>
               <span><i class="bi bi-file-earmark-text me-1"></i> pp. 1–11</span>
               <span><i class="bi bi-calendar3 me-1"></i> June 2023</span>
               <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
             </div>
             <h4 class="article-title">
-              <a href="#art1">ASSESSMENT OF KNOWLEDGE AND ATTITUDE OF AGRICULTURAL EDUCATION STUDENTS’ ON CLIMATE CHANGE IN TAI SOLARIN COLLEGE OF EDUCATION, OMU-IJEBU, OGUN STATE, NIGERIA</a>
+              <a href="#art-v1-1">ASSESSMENT OF KNOWLEDGE AND ATTITUDE OF AGRICULTURAL EDUCATION STUDENTS’ ON CLIMATE CHANGE IN TAI SOLARIN COLLEGE OF EDUCATION, OMU-IJEBU, OGUN STATE, NIGERIA</a>
             </h4>
             <div class="article-authors">
               <i class="bi bi-person-fill text-muted me-1"></i> <strong>Otufale G.A., Igbosanu A.O.</strong>
             </div>
             <div class="article-actions">
-              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract1" aria-expanded="false">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-v1-1" aria-expanded="false">
                 <i class="bi bi-chevron-down me-1"></i> View Abstract
               </button>
-              <a href="assets/img/josae-call-for-papers.jpg" target="_blank" class="btn btn-primary-fud btn-sm">
+              <a href="assets/docs/vol1-issue1/josae-vol1-no1-art01-otufale.pdf" download class="btn btn-primary-fud btn-sm">
                 <i class="bi bi-file-earmark-pdf-fill me-1"></i> Download PDF
               </a>
-              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Otufale, G.A., & Igbosanu, A.O. (2023). Assessment of Knowledge and Attitude of Agricultural Education Students’ on Climate Change in Tai Solarin College of Education, Omu-Ijebu, Ogun State, Nigeria. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), 1-11.">
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Otufale G.A., Igbosanu A.O. (2023). ASSESSMENT OF KNOWLEDGE AND ATTITUDE OF AGRICULTURAL EDUCATION STUDENTS’ ON CLIMATE CHANGE IN TAI SOLARIN COLLEGE OF EDUCATION, OMU-IJEBU, OGUN STATE, NIGERIA. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), pp. 1–11.">
                 <i class="bi bi-quote me-1"></i> Cite
               </button>
             </div>
-            <div class="collapse abstract-collapse" id="abstract1">
+            <div class="collapse abstract-collapse" id="abstract-v1-1">
               <strong>Abstract:</strong> This empirical study investigates the knowledge levels, perceptions, and attitudes of agricultural education students towards anthropogenic climate change, mitigation techniques, and climate-smart pedagogical curricula in tertiary educational institutions in southwestern Nigeria.
             </div>
           </div>
 
-          <!-- ARTICLE 2 -->
-          <div class="article-card article-item" data-category="livestock">
+
+          <!-- ARTICLE VOL 1 NO 1 - ART 2 -->
+          <div class="article-card article-item" data-category="livestock" data-issue="vol1no1">
             <div class="article-meta">
+              <span class="badge bg-secondary me-1">Vol. 1 No. 1 (June 2023)</span>
               <span class="article-badge">Animal Nutrition &amp; Forage</span>
               <span><i class="bi bi-file-earmark-text me-1"></i> pp. 12–17</span>
               <span><i class="bi bi-calendar3 me-1"></i> June 2023</span>
               <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
             </div>
             <h4 class="article-title">
-              <a href="#art2">EFFECTS OF PILIOSTIGMA THONINGII (KALGO) LEAVES DIETS ON PERFORMANCE AND DIGESTIBILITY OF KANO BROWN BUCKS IN SEMI-ARID ZONE OF NIGERIA</a>
+              <a href="#art-v1-2">EFFECTS OF PILIOSTIGMA THONINGII (KALGO) LEAVES DIETS ON PERFORMANCE AND DIGESTIBILITY OF KANO BROWN BUCKS IN SEMI-ARID ZONE OF NIGERIA</a>
             </h4>
             <div class="article-authors">
               <i class="bi bi-person-fill text-muted me-1"></i> <strong>Ashiru, R. M., Iliyasu, K. A., Madu, A., Babandi, B., Ubayi, K. M., Ado, F. H., Sariyyu, S., Afolabi, H.O., Danzabuwa., A. A. and Jibrin, I.</strong>
             </div>
             <div class="article-actions">
-              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract2" aria-expanded="false">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-v1-2" aria-expanded="false">
                 <i class="bi bi-chevron-down me-1"></i> View Abstract
               </button>
-              <a href="assets/img/josae-call-for-papers.jpg" target="_blank" class="btn btn-primary-fud btn-sm">
+              <a href="assets/docs/vol1-issue1/josae-vol1-no1-art02-ashiru.pdf" download class="btn btn-primary-fud btn-sm">
                 <i class="bi bi-file-earmark-pdf-fill me-1"></i> Download PDF
               </a>
-              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Ashiru, R. M., et al. (2023). Effects of Piliostigma thoningii (Kalgo) Leaves Diets on Performance and Digestibility of Kano Brown Bucks in Semi-Arid Zone of Nigeria. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), 12-17.">
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Ashiru, R. M., Iliyasu, K. A., Madu, A., Babandi, B., Ubayi, K. M., Ado, F. H., Sariyyu, S., Afolabi, H.O., Danzabuwa., A. A. and Jibrin, I. (2023). EFFECTS OF PILIOSTIGMA THONINGII (KALGO) LEAVES DIETS ON PERFORMANCE AND DIGESTIBILITY OF KANO BROWN BUCKS IN SEMI-ARID ZONE OF NIGERIA. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), pp. 12–17.">
                 <i class="bi bi-quote me-1"></i> Cite
               </button>
             </div>
-            <div class="collapse abstract-collapse" id="abstract2">
-              <strong>Abstract:</strong> Investigates the dietary inclusion of *Piliostigma thoningii* (locally known as Kalgo) leaves as an affordable dry-season browse supplement to enhance body weight gains, feed conversion ratio, and nutrient digestibility in growing Kano Brown bucks in northern Nigeria.
+            <div class="collapse abstract-collapse" id="abstract-v1-2">
+              <strong>Abstract:</strong> Investigates the dietary inclusion of Piliostigma thoningii (locally known as Kalgo) leaves as an affordable dry-season browse supplement to enhance body weight gains, feed conversion ratio, and nutrient digestibility in growing Kano Brown bucks in northern Nigeria.
             </div>
           </div>
 
-          <!-- ARTICLE 3 -->
-          <div class="article-card article-item" data-category="climate">
+
+          <!-- ARTICLE VOL 1 NO 1 - ART 3 -->
+          <div class="article-card article-item" data-category="climate" data-issue="vol1no1">
             <div class="article-meta">
+              <span class="badge bg-secondary me-1">Vol. 1 No. 1 (June 2023)</span>
               <span class="article-badge">Climate Communication &amp; Media</span>
               <span><i class="bi bi-file-earmark-text me-1"></i> pp. 18–25</span>
               <span><i class="bi bi-calendar3 me-1"></i> June 2023</span>
               <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
             </div>
             <h4 class="article-title">
-              <a href="#art3">EVALUATION OF CLIMATE CHANGE AND RELATED ISSUES COVERAGES WITHIN SOME SELECTED NIGERIAN NEWSPAPERS</a>
+              <a href="#art-v1-3">EVALUATION OF CLIMATE CHANGE AND RELATED ISSUES COVERAGES WITHIN SOME SELECTED NIGERIAN NEWSPAPERS</a>
             </h4>
             <div class="article-authors">
               <i class="bi bi-person-fill text-muted me-1"></i> <strong>A. Abubakar, H. I. Ibrahim and G.T. Adejare</strong>
             </div>
             <div class="article-actions">
-              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract3" aria-expanded="false">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-v1-3" aria-expanded="false">
                 <i class="bi bi-chevron-down me-1"></i> View Abstract
               </button>
-              <a href="assets/img/josae-call-for-papers.jpg" target="_blank" class="btn btn-primary-fud btn-sm">
+              <a href="assets/docs/vol1-issue1/josae-vol1-no1-art03-abubakar.pdf" download class="btn btn-primary-fud btn-sm">
                 <i class="bi bi-file-earmark-pdf-fill me-1"></i> Download PDF
               </a>
-              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Abubakar, A., Ibrahim, H. I., & Adejare, G.T. (2023). Evaluation of Climate Change and Related Issues Coverages Within Some Selected Nigerian Newspapers. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), 18-25.">
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="A. Abubakar, H. I. Ibrahim and G.T. Adejare (2023). EVALUATION OF CLIMATE CHANGE AND RELATED ISSUES COVERAGES WITHIN SOME SELECTED NIGERIAN NEWSPAPERS. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), pp. 18–25.">
                 <i class="bi bi-quote me-1"></i> Cite
               </button>
             </div>
-            <div class="collapse abstract-collapse" id="abstract3">
+            <div class="collapse abstract-collapse" id="abstract-v1-3">
               <strong>Abstract:</strong> Content analysis assessing the frequency, prominence, depth, and framing of climate change, drought, flood disasters, and agricultural adaptation reports across major national daily newspapers in Nigeria.
             </div>
           </div>
 
-          <!-- ARTICLE 4 -->
-          <div class="article-card article-item" data-category="extension">
+
+          <!-- ARTICLE VOL 1 NO 1 - ART 4 -->
+          <div class="article-card article-item" data-category="extension" data-issue="vol1no1">
             <div class="article-meta">
+              <span class="badge bg-secondary me-1">Vol. 1 No. 1 (June 2023)</span>
               <span class="article-badge">Food Processing &amp; Gender</span>
               <span><i class="bi bi-file-earmark-text me-1"></i> pp. 26–34</span>
               <span><i class="bi bi-calendar3 me-1"></i> June 2023</span>
               <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
             </div>
             <h4 class="article-title">
-              <a href="#art4">ASSESSMENT OF THE UTILIZATION OF CASSAVA PROCESSING TECHNOLOGIES AMONG WOMEN PROCESSORS IN EKITI STATE, NIGERIA</a>
+              <a href="#art-v1-4">ASSESSMENT OF THE UTILIZATION OF CASSAVA PROCESSING TECHNOLOGIES AMONG WOMEN PROCESSORS IN EKITI STATE, NIGERIA</a>
             </h4>
             <div class="article-authors">
               <i class="bi bi-person-fill text-muted me-1"></i> <strong>Adewumi, O.T., Ajala, A.O., Bamigboye, O.T, Fanu, A.T, Oke, O.S.</strong>
             </div>
             <div class="article-actions">
-              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract4" aria-expanded="false">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-v1-4" aria-expanded="false">
                 <i class="bi bi-chevron-down me-1"></i> View Abstract
               </button>
-              <a href="assets/img/josae-call-for-papers.jpg" target="_blank" class="btn btn-primary-fud btn-sm">
+              <a href="assets/docs/vol1-issue1/josae-vol1-no1-art04-adewumi.pdf" download class="btn btn-primary-fud btn-sm">
                 <i class="bi bi-file-earmark-pdf-fill me-1"></i> Download PDF
               </a>
-              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Adewumi, O.T., et al. (2023). Assessment of the Utilization of Cassava Processing Technologies Among Women Processors in Ekiti State, Nigeria. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), 26-34.">
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Adewumi, O.T., Ajala, A.O., Bamigboye, O.T, Fanu, A.T, Oke, O.S. (2023). ASSESSMENT OF THE UTILIZATION OF CASSAVA PROCESSING TECHNOLOGIES AMONG WOMEN PROCESSORS IN EKITI STATE, NIGERIA. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), pp. 26–34.">
                 <i class="bi bi-quote me-1"></i> Cite
               </button>
             </div>
-            <div class="collapse abstract-collapse" id="abstract4">
+            <div class="collapse abstract-collapse" id="abstract-v1-4">
               <strong>Abstract:</strong> Evaluates the adoption levels, technical efficiency, labor savings, and socio-economic constraints encountered by rural women cassava processors in utilizing mechanized graters, hydraulic pressers, and improved frying equipment.
             </div>
           </div>
 
-          <!-- ARTICLE 5 -->
-          <div class="article-card article-item" data-category="extension">
+
+          <!-- ARTICLE VOL 1 NO 1 - ART 5 -->
+          <div class="article-card article-item" data-category="extension" data-issue="vol1no1">
             <div class="article-meta">
+              <span class="badge bg-secondary me-1">Vol. 1 No. 1 (June 2023)</span>
               <span class="article-badge">Rural Sociology &amp; Livelihoods</span>
               <span><i class="bi bi-file-earmark-text me-1"></i> pp. 35–42</span>
               <span><i class="bi bi-calendar3 me-1"></i> June 2023</span>
               <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
             </div>
             <h4 class="article-title">
-              <a href="#art5">ROLES OF COMMUNITY AND SOCIAL DEVELOPMENT PROJECT (CSDP) ON THE LIVELIHOODS OF RURAL FARMERS IN KATSINA STATE, NIGERIA</a>
+              <a href="#art-v1-5">ROLES OF COMMUNITY AND SOCIAL DEVELOPMENT PROJECT (CSDP) ON THE LIVELIHOODS OF RURAL FARMERS IN KATSINA STATE, NIGERIA</a>
             </h4>
             <div class="article-authors">
               <i class="bi bi-person-fill text-muted me-1"></i> <strong>Tafida, I. Abdullahi, A. and Suleiman, A.</strong>
             </div>
             <div class="article-actions">
-              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract5" aria-expanded="false">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-v1-5" aria-expanded="false">
                 <i class="bi bi-chevron-down me-1"></i> View Abstract
               </button>
-              <a href="assets/img/josae-call-for-papers.jpg" target="_blank" class="btn btn-primary-fud btn-sm">
+              <a href="assets/docs/vol1-issue1/josae-vol1-no1-art05-tafida-csdp.pdf" download class="btn btn-primary-fud btn-sm">
                 <i class="bi bi-file-earmark-pdf-fill me-1"></i> Download PDF
               </a>
-              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Tafida, I., Abdullahi, A., & Suleiman, A. (2023). Roles of Community and Social Development Project (CSDP) on the Livelihoods of Rural Farmers in Katsina State, Nigeria. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), 35-42.">
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Tafida, I. Abdullahi, A. and Suleiman, A. (2023). ROLES OF COMMUNITY AND SOCIAL DEVELOPMENT PROJECT (CSDP) ON THE LIVELIHOODS OF RURAL FARMERS IN KATSINA STATE, NIGERIA. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), pp. 35–42.">
                 <i class="bi bi-quote me-1"></i> Cite
               </button>
             </div>
-            <div class="collapse abstract-collapse" id="abstract5">
+            <div class="collapse abstract-collapse" id="abstract-v1-5">
               <strong>Abstract:</strong> Examines the micro-level impacts of CSDP micro-projects (feeder roads, borehole irrigation, processing centres) on income enhancement, poverty reduction, and livelihood assets of rural farming households in Katsina State.
             </div>
           </div>
 
-          <!-- ARTICLE 6 -->
-          <div class="article-card article-item" data-category="climate">
+
+          <!-- ARTICLE VOL 1 NO 1 - ART 6 -->
+          <div class="article-card article-item" data-category="climate" data-issue="vol1no1">
             <div class="article-meta">
+              <span class="badge bg-secondary me-1">Vol. 1 No. 1 (June 2023)</span>
               <span class="article-badge">Agritech &amp; ICT In Agriculture</span>
               <span><i class="bi bi-file-earmark-text me-1"></i> pp. 43–51</span>
               <span><i class="bi bi-calendar3 me-1"></i> June 2023</span>
               <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
             </div>
             <h4 class="article-title">
-              <a href="#art6">RICE FARMERS’ UTILIZATION OF INFORMATION COMMUNICATION TECHNOLOGIES IN WESTERN AGRICULTURAL ZONE OF BAUCHI STATE, NIGERIA</a>
+              <a href="#art-v1-6">RICE FARMERS’ UTILIZATION OF INFORMATION COMMUNICATION TECHNOLOGIES IN WESTERN AGRICULTURAL ZONE OF BAUCHI STATE, NIGERIA</a>
             </h4>
             <div class="article-authors">
               <i class="bi bi-person-fill text-muted me-1"></i> <strong>Itse V., Abdullahi, S. and Abu, A. I.</strong>
             </div>
             <div class="article-actions">
-              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract6" aria-expanded="false">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-v1-6" aria-expanded="false">
                 <i class="bi bi-chevron-down me-1"></i> View Abstract
               </button>
-              <a href="assets/img/josae-call-for-papers.jpg" target="_blank" class="btn btn-primary-fud btn-sm">
+              <a href="assets/docs/vol1-issue1/josae-vol1-no1-art06-itse.pdf" download class="btn btn-primary-fud btn-sm">
                 <i class="bi bi-file-earmark-pdf-fill me-1"></i> Download PDF
               </a>
-              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Itse, V., Abdullahi, S., & Abu, A. I. (2023). Rice Farmers’ Utilization of Information Communication Technologies in Western Agricultural Zone of Bauchi State, Nigeria. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), 43-51.">
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Itse V., Abdullahi, S. and Abu, A. I. (2023). RICE FARMERS’ UTILIZATION OF INFORMATION COMMUNICATION TECHNOLOGIES IN WESTERN AGRICULTURAL ZONE OF BAUCHI STATE, NIGERIA. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), pp. 43–51.">
                 <i class="bi bi-quote me-1"></i> Cite
               </button>
             </div>
-            <div class="collapse abstract-collapse" id="abstract6">
+            <div class="collapse abstract-collapse" id="abstract-v1-6">
               <strong>Abstract:</strong> Investigates the accessibility and adoption frequency of mobile phones, radio, SMS alerts, and internet portals for sourcing input prices, weather forecasts, and pest management advisory by smallholder rice growers in Bauchi State.
             </div>
           </div>
 
-          <!-- ARTICLE 7 -->
-          <div class="article-card article-item" data-category="crops-soils">
+
+          <!-- ARTICLE VOL 1 NO 1 - ART 7 -->
+          <div class="article-card article-item" data-category="crops-soils" data-issue="vol1no1">
             <div class="article-meta">
+              <span class="badge bg-secondary me-1">Vol. 1 No. 1 (June 2023)</span>
               <span class="article-badge">Soil Science &amp; Agronomy</span>
               <span><i class="bi bi-file-earmark-text me-1"></i> pp. 52–58</span>
               <span><i class="bi bi-calendar3 me-1"></i> June 2023</span>
               <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
             </div>
             <h4 class="article-title">
-              <a href="#art7">NITROGEN USE EFFICIENCY (NUE), N CONCENTRATION, UPTAKE AND YIELD PARAMETERS OF MAIZE AS INFLUENCED BY DIFFERENT NITROGEN FERTILIZER RATES IN NORTHERN GUINEA SAVANNA ALFISOLS</a>
+              <a href="#art-v1-7">NITROGEN USE EFFICIENCY (NUE), N CONCENTRATION, UPTAKE AND YIELD PARAMETERS OF MAIZE AS INFLUENCED BY DIFFERENT NITROGEN FERTILIZER RATES IN NORTHERN GUINEA SAVANNA ALFISOLS</a>
             </h4>
             <div class="article-authors">
               <i class="bi bi-person-fill text-muted me-1"></i> <strong>Khalid T. K., Garba A.R., Gaya M.I., Malami M. and Bilyaminu A.B.</strong>
             </div>
             <div class="article-actions">
-              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract7" aria-expanded="false">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-v1-7" aria-expanded="false">
                 <i class="bi bi-chevron-down me-1"></i> View Abstract
               </button>
-              <a href="assets/img/josae-call-for-papers.jpg" target="_blank" class="btn btn-primary-fud btn-sm">
+              <a href="assets/docs/vol1-issue1/josae-vol1-no1-art07-khalid-nue.pdf" download class="btn btn-primary-fud btn-sm">
                 <i class="bi bi-file-earmark-pdf-fill me-1"></i> Download PDF
               </a>
-              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Khalid, T. K., et al. (2023). Nitrogen Use Efficiency (NUE), N Concentration, Uptake and Yield Parameters of Maize as Influenced by Different Nitrogen Fertilizer Rates in Northern Guinea Savanna Alfisols. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), 52-58.">
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Khalid T. K., Garba A.R., Gaya M.I., Malami M. and Bilyaminu A.B. (2023). NITROGEN USE EFFICIENCY (NUE), N CONCENTRATION, UPTAKE AND YIELD PARAMETERS OF MAIZE AS INFLUENCED BY DIFFERENT NITROGEN FERTILIZER RATES IN NORTHERN GUINEA SAVANNA ALFISOLS. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), pp. 52–58.">
                 <i class="bi bi-quote me-1"></i> Cite
               </button>
             </div>
-            <div class="collapse abstract-collapse" id="abstract7">
+            <div class="collapse abstract-collapse" id="abstract-v1-7">
               <strong>Abstract:</strong> Field experiments determining agronomic efficiency, physiological efficiency, nitrogen recovery fraction, and grain yield responses of maize across calibrated nitrogen fertilization levels in savanna Alfisols.
             </div>
           </div>
 
-          <!-- ARTICLE 8 -->
-          <div class="article-card article-item" data-category="crops-soils">
+
+          <!-- ARTICLE VOL 1 NO 1 - ART 8 -->
+          <div class="article-card article-item" data-category="crops-soils" data-issue="vol1no1">
             <div class="article-meta">
+              <span class="badge bg-secondary me-1">Vol. 1 No. 1 (June 2023)</span>
               <span class="article-badge">Soil Microbiology &amp; Fertility</span>
               <span><i class="bi bi-file-earmark-text me-1"></i> pp. 59–65</span>
               <span><i class="bi bi-calendar3 me-1"></i> June 2023</span>
               <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
             </div>
             <h4 class="article-title">
-              <a href="#art8">INFLUENCE OF COW DUNG AND UREA FERTILIZER ON SOIL pH, OC, TN AND MICROBIAL POPULATION UNDER MAIZE POT EXPERIMENT IN A SAVANNA ALFISOLS</a>
+              <a href="#art-v1-8">INFLUENCE OF COW DUNG AND UREA FERTILIZER ON SOIL pH, OC, TN AND MICROBIAL POPULATION UNDER MAIZE POT EXPERIMENT IN A SAVANNA ALFISOLS</a>
             </h4>
             <div class="article-authors">
               <i class="bi bi-person-fill text-muted me-1"></i> <strong>Khalid T. K., Uyovbisere E.O., Abdullahi A.A., Malami M., and Bilyaminu A.B.</strong>
             </div>
             <div class="article-actions">
-              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract8" aria-expanded="false">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-v1-8" aria-expanded="false">
                 <i class="bi bi-chevron-down me-1"></i> View Abstract
               </button>
-              <a href="assets/img/josae-call-for-papers.jpg" target="_blank" class="btn btn-primary-fud btn-sm">
+              <a href="assets/docs/vol1-issue1/josae-vol1-no1-art08-khalid-cowdung.pdf" download class="btn btn-primary-fud btn-sm">
                 <i class="bi bi-file-earmark-pdf-fill me-1"></i> Download PDF
               </a>
-              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Khalid, T. K., et al. (2023). Influence of Cow Dung and Urea Fertilizer on Soil pH, OC, TN and Microbial Population under Maize Pot Experiment in a Savanna Alfisols. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), 59-65.">
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Khalid T. K., Uyovbisere E.O., Abdullahi A.A., Malami M., and Bilyaminu A.B. (2023). INFLUENCE OF COW DUNG AND UREA FERTILIZER ON SOIL pH, OC, TN AND MICROBIAL POPULATION UNDER MAIZE POT EXPERIMENT IN A SAVANNA ALFISOLS. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), pp. 59–65.">
                 <i class="bi bi-quote me-1"></i> Cite
               </button>
             </div>
-            <div class="collapse abstract-collapse" id="abstract8">
+            <div class="collapse abstract-collapse" id="abstract-v1-8">
               <strong>Abstract:</strong> Evaluates the combined application of animal manure (cow dung) and mineral nitrogen (urea) on soil chemical parameters (pH, organic carbon, total nitrogen) and total bacterial/fungal microbial colonies.
             </div>
           </div>
 
-          <!-- ARTICLE 9 -->
-          <div class="article-card article-item" data-category="extension">
+
+          <!-- ARTICLE VOL 1 NO 1 - ART 9 -->
+          <div class="article-card article-item" data-category="extension" data-issue="vol1no1">
             <div class="article-meta">
+              <span class="badge bg-secondary me-1">Vol. 1 No. 1 (June 2023)</span>
               <span class="article-badge">Agricultural Extension &amp; Gender</span>
               <span><i class="bi bi-file-earmark-text me-1"></i> pp. 66–73</span>
               <span><i class="bi bi-calendar3 me-1"></i> June 2023</span>
               <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
             </div>
             <h4 class="article-title">
-              <a href="#art9">ANALYSIS OF DETERMINANTS OF ACCESS TO EXTENSION SERVICES AMONG WOMEN FARMERS IN NORTHERN ZONE OF PLATEAU STATE, NIGERIA</a>
+              <a href="#art-v1-9">ANALYSIS OF DETERMINANTS OF ACCESS TO EXTENSION SERVICES AMONG WOMEN FARMERS IN NORTHERN ZONE OF PLATEAU STATE, NIGERIA</a>
             </h4>
             <div class="article-authors">
               <i class="bi bi-person-fill text-muted me-1"></i> <strong>Makvereng, S., Abdullahi S., Abdurahman S. and Satdom S. M.</strong>
             </div>
             <div class="article-actions">
-              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract9" aria-expanded="false">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-v1-9" aria-expanded="false">
                 <i class="bi bi-chevron-down me-1"></i> View Abstract
               </button>
-              <a href="assets/img/josae-call-for-papers.jpg" target="_blank" class="btn btn-primary-fud btn-sm">
+              <a href="assets/docs/vol1-issue1/josae-vol1-no1-art09-makvereng.pdf" download class="btn btn-primary-fud btn-sm">
                 <i class="bi bi-file-earmark-pdf-fill me-1"></i> Download PDF
               </a>
-              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Makvereng, S., et al. (2023). Analysis of Determinants of Access to Extension Services Among Women Farmers in Northern Zone of Plateau State, Nigeria. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), 66-73.">
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Makvereng, S., Abdullahi S., Abdurahman S. and Satdom S. M. (2023). ANALYSIS OF DETERMINANTS OF ACCESS TO EXTENSION SERVICES AMONG WOMEN FARMERS IN NORTHERN ZONE OF PLATEAU STATE, NIGERIA. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), pp. 66–73.">
                 <i class="bi bi-quote me-1"></i> Cite
               </button>
             </div>
-            <div class="collapse abstract-collapse" id="abstract9">
+            <div class="collapse abstract-collapse" id="abstract-v1-9">
               <strong>Abstract:</strong> Uses logit econometric modeling to identify key institutional, socioeconomic, and cultural factors dictating extension contact and advisory services for rural female food crop producers in Plateau State.
             </div>
           </div>
 
-          <!-- ARTICLE 10 -->
-          <div class="article-card article-item" data-category="climate">
+
+          <!-- ARTICLE VOL 1 NO 1 - ART 10 -->
+          <div class="article-card article-item" data-category="climate" data-issue="vol1no1">
             <div class="article-meta">
+              <span class="badge bg-secondary me-1">Vol. 1 No. 1 (June 2023)</span>
               <span class="article-badge">Climate Adaptation &amp; Agronomy</span>
               <span><i class="bi bi-file-earmark-text me-1"></i> pp. 74–81</span>
               <span><i class="bi bi-calendar3 me-1"></i> June 2023</span>
               <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
             </div>
             <h4 class="article-title">
-              <a href="#art10">DETERMINANT OF ADAPTATION STRATEGIES TO CLIMATE CHANGE BY CASSAVA FARMERS IN ANAMBRA STATE, NIGERIA</a>
+              <a href="#art-v1-10">DETERMINANT OF ADAPTATION STRATEGIES TO CLIMATE CHANGE BY CASSAVA FARMERS IN ANAMBRA STATE, NIGERIA</a>
             </h4>
             <div class="article-authors">
               <i class="bi bi-person-fill text-muted me-1"></i> <strong>O. Abojei, S. I Ume and A. I. N Kaine</strong>
             </div>
             <div class="article-actions">
-              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract10" aria-expanded="false">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-v1-10" aria-expanded="false">
                 <i class="bi bi-chevron-down me-1"></i> View Abstract
               </button>
-              <a href="assets/img/josae-call-for-papers.jpg" target="_blank" class="btn btn-primary-fud btn-sm">
+              <a href="assets/docs/vol1-issue1/josae-vol1-no1-art10-abojei.pdf" download class="btn btn-primary-fud btn-sm">
                 <i class="bi bi-file-earmark-pdf-fill me-1"></i> Download PDF
               </a>
-              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Abojei, O., Ume, S. I., & Kaine, A. I. N. (2023). Determinant of Adaptation Strategies to Climate Change by Cassava Farmers in Anambra State, Nigeria. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), 74-81.">
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="O. Abojei, S. I Ume and A. I. N Kaine (2023). DETERMINANT OF ADAPTATION STRATEGIES TO CLIMATE CHANGE BY CASSAVA FARMERS IN ANAMBRA STATE, NIGERIA. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), pp. 74–81.">
                 <i class="bi bi-quote me-1"></i> Cite
               </button>
             </div>
-            <div class="collapse abstract-collapse" id="abstract10">
+            <div class="collapse abstract-collapse" id="abstract-v1-10">
               <strong>Abstract:</strong> Explores indigenous adaptation options—such as staggered planting, early maturing cultivars, and mulching—employed by cassava growers against shifting rainfall patterns and heat stress in southeastern Nigeria.
             </div>
           </div>
 
-          <!-- ARTICLE 11 -->
-          <div class="article-card article-item" data-category="extension">
+
+          <!-- ARTICLE VOL 1 NO 1 - ART 11 -->
+          <div class="article-card article-item" data-category="extension" data-issue="vol1no1">
             <div class="article-meta">
+              <span class="badge bg-secondary me-1">Vol. 1 No. 1 (June 2023)</span>
               <span class="article-badge">Agricultural Economics</span>
               <span><i class="bi bi-file-earmark-text me-1"></i> pp. 82–89</span>
               <span><i class="bi bi-calendar3 me-1"></i> June 2023</span>
               <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
             </div>
             <h4 class="article-title">
-              <a href="#art11">ASSESSMENTS OF SOCIO-ECONOMIC FACTORS INFLUENCING SMALLHOLDER VEGETABLE-FARMERS’ INCOME IN SOME SELECTED LOCAL GOVERNMENT AREAS OF KADUNA STATE, NIGERIA</a>
+              <a href="#art-v1-11">ASSESSMENTS OF SOCIO-ECONOMIC FACTORS INFLUENCING SMALLHOLDER VEGETABLE-FARMERS’ INCOME IN SOME SELECTED LOCAL GOVERNMENT AREAS OF KADUNA STATE, NIGERIA</a>
             </h4>
             <div class="article-authors">
               <i class="bi bi-person-fill text-muted me-1"></i> <strong>Owolabi, J.O. and Olajide, H. D.</strong>
             </div>
             <div class="article-actions">
-              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract11" aria-expanded="false">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-v1-11" aria-expanded="false">
                 <i class="bi bi-chevron-down me-1"></i> View Abstract
               </button>
-              <a href="assets/img/josae-call-for-papers.jpg" target="_blank" class="btn btn-primary-fud btn-sm">
+              <a href="assets/docs/vol1-issue1/josae-vol1-no1-art11-owolabi.pdf" download class="btn btn-primary-fud btn-sm">
                 <i class="bi bi-file-earmark-pdf-fill me-1"></i> Download PDF
               </a>
-              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Owolabi, J.O., & Olajide, H. D. (2023). Assessments of Socio-Economic Factors Influencing Smallholder Vegetable-Farmers’ Income in Some Selected Local Government Areas of Kaduna State, Nigeria. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), 82-89.">
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Owolabi, J.O. and Olajide, H. D. (2023). ASSESSMENTS OF SOCIO-ECONOMIC FACTORS INFLUENCING SMALLHOLDER VEGETABLE-FARMERS’ INCOME IN SOME SELECTED LOCAL GOVERNMENT AREAS OF KADUNA STATE, NIGERIA. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), pp. 82–89.">
                 <i class="bi bi-quote me-1"></i> Cite
               </button>
             </div>
-            <div class="collapse abstract-collapse" id="abstract11">
+            <div class="collapse abstract-collapse" id="abstract-v1-11">
               <strong>Abstract:</strong> Analyzes farm enterprise budgets, gross margins, credit constraints, and market channel access shaping net returns for peri-urban vegetable producers in Kaduna State.
             </div>
           </div>
 
-          <!-- ARTICLE 12 -->
-          <div class="article-card article-item" data-category="extension">
+
+          <!-- ARTICLE VOL 1 NO 1 - ART 12 -->
+          <div class="article-card article-item" data-category="extension" data-issue="vol1no1">
             <div class="article-meta">
+              <span class="badge bg-secondary me-1">Vol. 1 No. 1 (June 2023)</span>
               <span class="article-badge">Rural Development &amp; Welfare</span>
               <span><i class="bi bi-file-earmark-text me-1"></i> pp. 90–97</span>
               <span><i class="bi bi-calendar3 me-1"></i> June 2023</span>
               <span class="text-success fw-semibold"><i class="bi bi-check-circle-fill me-1"></i> Peer Reviewed</span>
             </div>
             <h4 class="article-title">
-              <a href="#art12">ASSESSMENT OF NON-FARM ACTIVITIES INVOLVEMENT ON THE WELFARE STATUS OF ARABLE CROP FARMERS IN OYO STATE, NIGERIA</a>
+              <a href="#art-v1-12">ASSESSMENT OF NON-FARM ACTIVITIES INVOLVEMENT ON THE WELFARE STATUS OF ARABLE CROP FARMERS IN OYO STATE, NIGERIA</a>
             </h4>
             <div class="article-authors">
               <i class="bi bi-person-fill text-muted me-1"></i> <strong>Sadiq, M. M., Ariwoola, S. A. and Adisa, J. O.</strong>
             </div>
             <div class="article-actions">
-              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract12" aria-expanded="false">
+              <button class="btn btn-outline-fud btn-sm btn-toggle-abstract" type="button" data-bs-toggle="collapse" data-bs-target="#abstract-v1-12" aria-expanded="false">
                 <i class="bi bi-chevron-down me-1"></i> View Abstract
               </button>
-              <a href="assets/img/josae-call-for-papers.jpg" target="_blank" class="btn btn-primary-fud btn-sm">
+              <a href="assets/docs/vol1-issue1/josae-vol1-no1-art12-sadiq.pdf" download class="btn btn-primary-fud btn-sm">
                 <i class="bi bi-file-earmark-pdf-fill me-1"></i> Download PDF
               </a>
-              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Sadiq, M. M., Ariwoola, S. A., & Adisa, J. O. (2023). Assessment of Non-Farm Activities Involvement on the Welfare Status of Arable Crop Farmers in Oyo State, Nigeria. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), 90-97.">
+              <button class="btn btn-light btn-sm border btn-copy-citation" data-citation="Sadiq, M. M., Ariwoola, S. A. and Adisa, J. O. (2023). ASSESSMENT OF NON-FARM ACTIVITIES INVOLVEMENT ON THE WELFARE STATUS OF ARABLE CROP FARMERS IN OYO STATE, NIGERIA. Journal of Smart Agriculture and Extension Services (JOSAE), 1(1), pp. 90–97.">
                 <i class="bi bi-quote me-1"></i> Cite
               </button>
             </div>
-            <div class="collapse abstract-collapse" id="abstract12">
+            <div class="collapse abstract-collapse" id="abstract-v1-12">
               <strong>Abstract:</strong> Investigates the contribution of non-agricultural enterprise engagement (artisanal trades, commodity trading) toward household expenditure, asset acquisition, and food security buffers in Oyo State farming communities.
             </div>
           </div>
+
 
         </div>
 
@@ -585,7 +994,7 @@
                 <i class="bi bi-compass me-2"></i> Journal Quick Links
               </div>
               <div class="quick-nav-list">
-                <a href="josae.html"><span class="fw-bold text-success"><i class="bi bi-book-fill me-2"></i>Current Issue (Vol 1 No 1)</span> <i class="bi bi-chevron-right"></i></a>
+                <a href="josae.html"><span class="fw-bold text-success"><i class="bi bi-book-fill me-2"></i>Current Issues</span> <i class="bi bi-chevron-right"></i></a>
                 <a href="josae-archives.html"><span><i class="bi bi-archive-fill me-2"></i>Archives &amp; Past Volumes</span> <i class="bi bi-chevron-right"></i></a>
                 <a href="josae-editorial.html"><span><i class="bi bi-people-fill me-2"></i>Editorial Advisory Council</span> <i class="bi bi-chevron-right"></i></a>
                 <a href="josae-guidelines.html"><span><i class="bi bi-file-text-fill me-2"></i>Author Guidelines &amp; Fees</span> <i class="bi bi-chevron-right"></i></a>
@@ -667,7 +1076,7 @@
         <div class="col-sm-6 col-lg-3">
           <h5>JOSAE Journal</h5>
           <ul class="footer-links">
-            <li><a href="josae.html">Current Issue (Vol 1 No 1)</a></li>
+            <li><a href="josae.html">Current Issues</a></li>
             <li><a href="josae-archives.html">Archives</a></li>
             <li><a href="josae-editorial.html">Editorial Board</a></li>
             <li><a href="josae-guidelines.html">Author Guidelines</a></li>
